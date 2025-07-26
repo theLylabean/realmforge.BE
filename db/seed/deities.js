@@ -1,188 +1,132 @@
+// seedDeitiesBatch1.js
 import db from '../client.js';
 
-export async function deitySeed() {
-    try {
-        await db.query('TRUNCATE deities RESTART IDENTITY CASCADE');
-        await db.query(`
-            INSERT INTO deities (name, alignment, domain, description) VALUES
-            (
-        'Bahamut', 'Lawful Good',
-        ARRAY['Justice', 'Protection', 'Nobility', 'Good'],
-        'The Platinum Dragon, embodiment of justice, mercy, and wisdom. Revered by good dragons and paladins.'
-    ),
-            (
-        'Tiamat', 'Chaotic Evil',
-        ARRAY['Destruction', 'Dragon', 'Evil', 'Greed', 'Hatred', 'Trickery', 'Tyranny'],
-        'Five-headed queen of evil dragons, embodiment of greed and malice, supreme matron of chromatics.'
-    ),
-            (
-        'Corellon Larethian', 'Chaotic Good',
-        ARRAY['Chaos', 'Good', 'Protection', 'War'],
-        'Patron god of elves, protector of magic, art, and beauty. Creator of the elven race.'
-    ),
-            (
-        'Gruumsh', 'Chaotic Evil',
-        ARRAY['Tempest', 'War'],
-        'Orc god of storms and war, eternal enemy of Corellon and leader of the orcish pantheon.'
-    ),
-            (
-        'Eilistraee', 'Chaotic Good',
-        ARRAY['Life', 'Light', 'Nature'],
-        'The Dark Maiden, drow goddess of song, beauty, and moonlight. Leads drow toward redemption.'
-    ),
-            (
-        'Helm', 'Lawful Neutral',
-        ARRAY['Life', 'Light', 'Twilight'],
-        'The Vigilant One, god of guardians and protection. Watches over those who safeguard others.'
-    ),
-            (
-        'Ilmater', 'Lawful Good',
-        ARRAY['Life', 'Twilight'],
-        'The Crying God, patron of endurance, suffering, and compassion. Protector of the oppressed.'
-    ),
-            (
-        'Mystra', 'Neutral Good',
-        ARRAY['Arcana', 'Knowledge'],
-        'Goddess of magic and the Weave. Preserves and teaches the responsible use of arcane power.'
-    ),
-            (
-        'Selûne', 'Chaotic Good',
-        ARRAY['Knowledge', 'Life', 'Twilight'],
-        'The Lady of Silver, goddess of the moon, stars, and navigation. Eternal rival of Shar.'
-    ),
-            (
-        'Shar', 'Neutral Evil',
-        ARRAY['Death', 'Trickery'],
-        'Mistress of the Night, goddess of darkness and loss. Twin sister of Selûne.'
-    ),
-            (
-        'Tempus', 'True Neutral',
-        ARRAY['War'],
-        'Lord of Battles, god of honorable war. Patron of warriors and soldiers.'
-    ),
-            (
-        'Tymora', 'Chaotic Good',
-        ARRAY['Trickery'],
-        'Lady Luck, goddess of fortune, adventure, and bold action. Opposed by Beshaba.'
-    ),
-            (
-        'Tharizdun', 'Chaotic Evil',
-        ARRAY['Darkness', 'Eternal Darkness'],
-        'The Chained God, an ancient evil of entropy and destruction, sealed away from the world.'
-    ),
-            (
-        'Bane', 'Lawful Evil',
-        ARRAY['War', 'Tyranny'],
-        'God of fear, hatred, and tyranny. Commands obedience and rules with an iron fist.'
-    ),
-            (
-        'Lathander', 'Neutral Good',
-        ARRAY['Life', 'Light'],
-        'Morninglord of renewal, birth, and vitality. Patron of spring and new beginnings.'
-    ),
-            (
-        'Torm', 'Lawful Good',
-        ARRAY['Order', 'War'],
-        'The True, god of duty, loyalty, and righteousness. Often worshipped by paladins and guards.'
-    ),
-            (
-        'Tyr', 'Lawful Good',
-        ARRAY['Justice', 'Law'],
-        'The Even-Handed, god of justice and law. Known for his missing hand and unwavering fairness.'
-    ),
-            (
-        'Vecna', 'Neutral Evil',
-        ARRAY['Death', 'Knowledge'],
-        'Lich god of secrets, undeath, and forbidden magic. Feared and worshipped by necromancers.'
-    ),
-            (
-        'Wee Jas', 'Lawful Neutral',
-        ARRAY['Death', 'Arcana'],
-        'Goddess of death and magic. Known for her cold logic and reverence for law and order.'
-    ),
-            (
-        'Moradin', 'Lawful Good',
-        ARRAY['Creation', 'Knowledge', 'Forge'],
-        'Dwarven god of creation and smithing. Father of dwarves and patron of artisans.'
-    ),
-            (
-        'Kelemvor', 'Lawful Neutral',
-        ARRAY['Death', 'Grave'],
-        'Judge of the Dead, god of death who promotes acceptance and fair judgment in the afterlife.'
-    ),
-            (
-        'Lolth', 'Chaotic Evil',
-        ARRAY['Trickery', 'War'],
-        'Drow goddess of spiders, lies, and chaos. Commands the dark and tyrannical aspects of drow society.'
-    ),
-            (
-        'Ioun', 'Neutral',
-        ARRAY['Knowledge', 'Arcana'],
-        'Goddess of knowledge, skill, and prophecy. Guardian of ideas and lore.'
-    ),
-            (
-        'Melora', 'Neutral',
-        ARRAY['Nature', 'Tempest'],
-        'Wild goddess of the sea and wilderness. Embodies the untamed forces of nature.'
-    ),
-            (
-        'Kord', 'Chaotic Good',
-        ARRAY['Storm', 'Strength'],
-        'Brawler god of strength and storms. Revered by warriors, sailors, and competitors.'
-    ),
-            (
-        'Obad-Hai', 'True Neutral',
-        ARRAY['Nature'],
-        'Shalm, god of nature, balance, and the four seasons. Patron of druids and hermits.'
-    ),
-            (
-        'Ehlonna', 'Neutral Good',
-        ARRAY['Nature', 'Life'],
-        'Goddess of woodlands and fertility. Protector of unicorns, forests, and natural beauty.'
-    ),
-            (
-        'Boccob', 'True Neutral',
-        ARRAY['Knowledge', 'Arcana'],
-        'The Uncaring, god of magic and foresight. Believes in the balance of power.'
-    ),
-            (
-        'Pholtus', 'Lawful Good',
-        ARRAY['Light', 'Law'],
-        'Zealous god of law and order. Upholder of rigid codes and absolute truth.'
-    ),
-            (
-        'Rao', 'Lawful Good',
-        ARRAY['Peace', 'Knowledge'],
-        'Calm god of reason, serenity, and peace. His worship promotes diplomacy and understanding.'
-    ),
-            (
-        'Celestian', 'True Neutral',
-        ARRAY['Stars', 'Travel'],
-        'Wanderer god of stars, space, and journeys. Patron of astrologers and planewalkers.'
-    ),
-            (
-        'Erythnul', 'Chaotic Evil',
-        ARRAY['Destruction', 'War'],
-        'Bloody god of slaughter and chaos. Worshipped by brutal raiders and berserkers.'
-    ),
-            (
-        'Heironeous', 'Lawful Good',
-        ARRAY['War', 'Valor'],
-        'Chivalrous god of justice and honor. Opposes his brother Hextor in an eternal rivalry.'
-    ),
-            (
-        'Hextor', 'Lawful Evil',
-        ARRAY['War', 'Tyranny'],
-        'God of conquest and tyranny. Commands armies to subjugate the weak and crush resistance.'
-    ),
-            (
-        'Nerull', 'Neutral Evil',
-        ARRAY['Death'],
-        'Reaper of souls, dark god of death and the grave. Feared for his dominion over the end of life.'
-    )
-        `);
-        console.log("✅ Deities seeded successfully.");
-    } catch (error) {
-        console.error("❌ Error seeding deities:", error);
-    }
+export async function seedDeitiesBatch1() {
+  try {
+    await db.query('TRUNCATE deities RESTART IDENTITY CASCADE');
+    await db.query(`
+      INSERT INTO deities (index, name, alignment, domain, description) VALUES
+      ('bahamut','Bahamut','Lawful Good',
+         ARRAY['Protection','Justice','Dragon','Life'],
+         ARRAY['Platinum Dragon, god of justice and good dragons']),
+      ('tiamat','Tiamat','Lawful Evil',
+         ARRAY['Greed','Trickery','Dragon'],
+         ARRAY['Five‑headed queen of evil dragons']),
+      ('io','Io','Neutral',
+         ARRAY['Balance','Creation','Dragon'],
+         ARRAY['Also called Asgorath, creator of dragonkind']),
+      ('astilabor','Astilabor','Neutral',
+         ARRAY['Wealth','Acquisitiveness','Dragon'],
+         ARRAY['Goddess of greed and dragon wealth']),
+      ('hlal','Hlal','Neutral Good',
+         ARRAY['Joy','Inspiration','Dragon'],
+         ARRAY['Goddess of humor and storytelling']),
+      ('lendys','Lendys','Lawful',
+         ARRAY['Justice','Balance','Dragon'],
+         ARRAY['Goddess of justice among dragons']),
+      ('tamara','Tamara','Neutral Good',
+         ARRAY['Mercy','Life','Dragon'],
+         ARRAY['Goddess of forgiveness and healing']),
+      ('corellon-larethian','Corellon Larethian','Chaotic Good',
+         ARRAY['Magic','Art','Elven','Arcana'],
+         ARRAY['Elven creator deity of magic and arts']),
+      ('moradin','Moradin','Lawful Good',
+         ARRAY['Forge','Creation','Dwarven'],
+         ARRAY['Dwarven god of smithing and creation']),
+      ('gruumsh','Gruumsh','Chaotic Evil',
+         ARRAY['War','Conquest','Orc'],
+         ARRAY['One‑eyed chief deity of the orcs']),
+      ('lolth','Lolth','Chaotic Evil',
+         ARRAY['Trickery','Deception','Spider','Drow'],
+         ARRAY['Drow spider queen and goddess of chaos']),
+      ('eilistraee','Eilistraee','Chaotic Good',
+         ARRAY['Beauty','Freedom','Moon','Drow'],
+         ARRAY['Goddess of song, dance, and moonlit freedom']),
+      ('ioun','Ioun','Neutral',
+         ARRAY['Knowledge','Skill','Magic'],
+         ARRAY['Goddess of knowledge, skill, and prophecy']),
+      ('boccob','Boccob','Neutral',
+         ARRAY['Arcana','Knowledge','Balance'],
+         ARRAY['God of magic, foresight, and balance']),
+      ('nerull','Nerull','Neutral Evil',
+         ARRAY['Death','Decay'],
+         ARRAY['God of death and the undead']),
+      ('heironeous','Heironeous','Lawful Good',
+         ARRAY['Valor','Justice','War'],
+         ARRAY['God of chivalry, justice, and valor']),
+      ('pholtus','Pholtus','Lawful Good',
+         ARRAY['Light','Law','Sun'],
+         ARRAY['God of light, law, and order']),
+      ('rao','Rao','Neutral Good',
+         ARRAY['Peace','Protection','Restoration'],
+         ARRAY['God of serenity, peace, and reason']),
+      ('celestian','Celestian','Neutral',
+         ARRAY['Stars','Magic','Oath'],
+         ARRAY['God of stars, navigation, and oaths']),
+      ('elonna','Ehlonna','Neutral Good',
+         ARRAY['Nature','Fertility','Forests'],
+         ARRAY['Goddess of forests, flora, and fertility']),
+      ('pelor','Pelor','Neutral Good',
+         ARRAY['Sun','Healing','Justice'],
+         ARRAY['God of the sun, healing, and agriculture']),
+      ('st-cuthbert','Saint Cuthbert','Lawful Neutral',
+         ARRAY['Zeal','Wisdom','Justice'],
+         ARRAY['God of common sense, zeal, and retribution']),
+      ('olidammara','Olidammara','Chaotic Neutral',
+         ARRAY['Luck','Music','Roguery'],
+         ARRAY['Trickster god of revelry and rogues']),
+      ('erythnul','Erythnul','Chaotic Evil',
+         ARRAY['Slaughter','Envy','Chaos'],
+         ARRAY['God of slaughter, envy, and chaos']),
+      ('fharlanghn','Fharlanghn','Neutral',
+         ARRAY['Travel','Luck','Distance'],
+         ARRAY['God of travel, horizons, and luck']),
+      ('hextor','Hextor','Lawful Evil',
+         ARRAY['War','Discord','Oppression'],
+         ARRAY['God of war, discord, mass slaughter']),
+      ('kord','Kord','Chaotic Good',
+         ARRAY['Athletics','Strength','Storm'],
+         ARRAY['God of strength, athletics, storms, and competition']),
+      ('stataurus','St. Cuthbert','Lawful Neutral',
+         ARRAY['Zeal','Judgment'],
+         ARRAY['God of retribution and common sense']),  -- duplicate? remove accordingly
+      ('vecna','Vecna','Neutral Evil',
+         ARRAY['Knowledge','Secrets','Undeath'],
+         ARRAY['Lich‑god of secrets, necromancy, and undeath']),
+      ('wee-jas','Wee Jas','Lawful Neutral',
+         ARRAY['Magic','Death','Protection'],
+         ARRAY['Goddess of magic, death, vanity, and law']),
+      ('bane','Bane','Lawful Evil',
+         ARRAY['War','Tyranny','Fear'],
+         ARRAY['God of tyranny, fear, and conquest']),
+      ('lathander','Lathander','Neutral Good',
+         ARRAY['Life','Light','Renewal'],
+         ARRAY['God of dawn, birth, and renewal']),
+      ('torm','Torm','Lawful Good',
+         ARRAY['Duty','Law','War'],
+         ARRAY['God of duty, loyalty, and righteousness']),
+      ('tyr','Tyr','Lawful Good',
+         ARRAY['Justice','War','Law'],
+         ARRAY['God of justice and lawful valor']),
+      ('mystra','Mystra','Neutral Good',
+         ARRAY['Magic','Knowledge','Weave'],
+         ARRAY['Goddess of magic, the Weave, and arcane knowledge']),
+      ('selune','Selûne','Chaotic Good',
+         ARRAY['Moon','Light','Navigation'],
+         ARRAY['Goddess of the moon, stars, and guidance']),
+      ('shar','Shar','Neutral Evil',
+         ARRAY['Darkness','Loss','Secrets'],
+         ARRAY['Goddess of darkness, loss, and secrets']),
+      ('tempus','Tempus','Neutral',
+         ARRAY['War','Honor','Battle'],
+         ARRAY['God of war, valor, and honor']),
+      ('tymora','Tymora','Chaotic Good',
+         ARRAY['Luck','Good Fortune','Adventure'],
+         ARRAY['Goddess of luck, good fortune, and bold action'])
+      ;
+    `);
+    console.log('✅ Deities Batch1 seeded');
+  } catch (err) {
+    console.error('❌ seedDeitiesBatch1 error', err);
+  }
 }
