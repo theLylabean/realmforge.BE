@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS factions;
+
+CREATE TABLE factions (
+    id SERIAL PRIMARY KEY,
+    index TEXT NOT NULL UNIQUE,
+    name TEXT NOT NULL UNIQUE,
+    alignment TEXT,
+    symbol TEXT,
+    description TEXT[]
+);
