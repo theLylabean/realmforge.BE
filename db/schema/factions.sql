@@ -4,7 +4,7 @@ CREATE TABLE factions (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
-    alignment TEXT,
+    alignment TEXT NOT NULL,
     symbol TEXT,
-    description TEXT[]
+    description TEXT[] NOT NULL
 );

@@ -5,4 +5,6 @@ CREATE TABLE char_class (
     index TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     hit_die INTEGER NOT NULL,
+    saving_throws TEXT[],
+    description TEXT[]
 );

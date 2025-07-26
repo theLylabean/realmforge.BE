@@ -5,6 +5,6 @@ CREATE TABLE char_subclass (
     index TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     char_class_id INTEGER REFERENCES char_class(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    description TEXT[],
+    description TEXT[] NOT NULL,
     subclass_flavor TEXT
 );

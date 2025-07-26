@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS subrace_traits;
+
+CREATE TABLE subrace_traits (
+    id SERIAL PRIMARY KEY,
+    subrace_id INTEGER REFERENCES subraces(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    trait_id INTEGER REFERENCES traits(id) ON DELETE CASCADE ON UPDATE CASCADE
+);

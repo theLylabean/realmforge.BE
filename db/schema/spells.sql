@@ -1,5 +1,16 @@
-DROP TABLE IF EXISTS ;
+DROP TABLE IF EXISTS spell_list CASCADE;
 
-CREATE TABLE (
-
+CREATE TABLE spell_list (
+    id SERIAL PRIMARY KEY,
+    index TEXT NOT NULL UNIQUE,
+    name TEXT NOT NULL UNIQUE,
+    level INTEGER NOT NULL,
+    school_id INTEGER REFERENCES spell_schools(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    casting_time TEXT NOT NULL,
+    range TEXT NOT NULL,
+    components TEXT[],
+    material TEXT,
+    duration TEXT,
+    description TEXT[] NOT NULL,
+    higher_level TEXT[]
 );

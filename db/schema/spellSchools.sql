@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS feats;
+DROP TABLE IF EXISTS spell_schools CASCADE;
 
-CREATE TABLE feats (
+CREATE TABLE spell_schools (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     description TEXT[] NOT NULL,
-    prerequisites JSONB
+    source TEXT
 );

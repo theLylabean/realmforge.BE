@@ -4,5 +4,5 @@ CREATE TABLE equipment_categories (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
-    description TEXT[]
+    description TEXT[] NOT NULL
 );
