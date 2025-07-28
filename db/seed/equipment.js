@@ -30,7 +30,6 @@ export async function seedEquipmentList() {
       ('dungeoneers-pack', 'Dungeoneer\'s Pack', ${categories['equipment-packs']}, 61, '12 gp',
         ARRAY['Backpack, crowbar, hammer, pitons, torches, rations, waterskin, rope'])
     `);
-
     console.log('✅ equipment_list (non-duplicate items) seeded successfully!');
   } catch (error) {
     console.error('❌ Error seeding equipment_list:', error);
