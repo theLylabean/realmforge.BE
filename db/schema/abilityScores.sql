@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS ability_scores;
-
 CREATE TABLE ability_scores (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

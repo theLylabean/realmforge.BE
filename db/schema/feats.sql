@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS feats;
-
 CREATE TABLE feats (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

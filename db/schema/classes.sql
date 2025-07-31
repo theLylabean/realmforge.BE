@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS char_class CASCADE;
-
 CREATE TABLE char_class (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

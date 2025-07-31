@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS monsters;
-
 CREATE TABLE monsters (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

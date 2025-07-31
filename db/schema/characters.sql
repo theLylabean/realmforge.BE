@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS characters;
-
 CREATE TABLE characters (
   id SERIAL PRIMARY KEY,
   user_id INTEGER REFERENCES users(id) ON DELETE CASCADE,

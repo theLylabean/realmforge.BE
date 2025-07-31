@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS spell_list CASCADE;
-
 CREATE TABLE spell_list (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

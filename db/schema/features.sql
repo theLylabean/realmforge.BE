@@ -1,10 +1,8 @@
-DROP TABLE IF EXISTS features;
-
 CREATE TABLE features (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
-    description TEXT[] NOT NULL
+    description TEXT[] NOT NULL,
     level INTEGER,
     class_id INTEGER REFERENCES char_class(id) ON DELETE CASCADE ON UPDATE CASCADE,
     subclass_id INTEGER REFERENCES char_subclass(id) ON DELETE CASCADE ON UPDATE CASCADE

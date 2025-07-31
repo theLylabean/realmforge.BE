@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS equipment_list;
-
 CREATE TABLE equipment_list (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

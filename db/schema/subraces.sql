@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS subraces CASCADE;
-
 CREATE TABLE subraces (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

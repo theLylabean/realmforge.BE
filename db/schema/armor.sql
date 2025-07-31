@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS armor;
-
 CREATE TABLE armor (
     id SERIAL PRIMARY KEY,
     equipment_id INTEGER REFERENCES equipment_list(id) ON DELETE CASCADE,

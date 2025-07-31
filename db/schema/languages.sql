@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS languages;
-
 CREATE TABLE languages (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

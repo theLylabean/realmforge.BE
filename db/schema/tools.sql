@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS tools;
-
 CREATE TABLE tools (
     id SERIAL PRIMARY KEY,
     equipment_id INTEGER REFERENCES equipment_list(id) ON DELETE CASCADE,

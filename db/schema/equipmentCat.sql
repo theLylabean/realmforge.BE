@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS equipment_categories CASCADE;
-
 CREATE TABLE equipment_categories (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,

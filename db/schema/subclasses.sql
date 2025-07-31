@@ -1,5 +1,3 @@
-DROP TABLE IF EXISTS char_subclass;
-
 CREATE TABLE char_subclass (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,
