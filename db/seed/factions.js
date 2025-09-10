@@ -1,6 +1,6 @@
 import db from '../client.js';
 
-export async function factionSeed() {
+export async function seedFactions() {
     try {
         await db.query('TRUNCATE factions RESTART IDENTITY CASCADE');
         await db.query(`
