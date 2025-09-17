@@ -1,5 +1,5 @@
 CREATE TABLE subrace_traits (
-    id SERIAL PRIMARY KEY,
-    subrace_id INTEGER REFERENCES subraces(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    trait_id INTEGER REFERENCES traits(id) ON DELETE CASCADE ON UPDATE CASCADE
+  subrace_slug TEXT REFERENCES subraces(slug) ON DELETE CASCADE ON UPDATE CASCADE,
+  trait_slug   TEXT REFERENCES traits(slug)   ON DELETE CASCADE,
+  PRIMARY KEY (subrace_slug, trait_slug)
 );

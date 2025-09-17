@@ -1,6 +1,6 @@
 CREATE TABLE races (
     id SERIAL PRIMARY KEY,
-    index TEXT NOT NULL UNIQUE,
+    slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     speed INTEGER NOT NULL,
     ability_bonuses JSONB NOT NULL,

@@ -1,6 +1,6 @@
 CREATE TABLE magic_items (
     id SERIAL PRIMARY KEY,
-    index TEXT NOT NULL UNIQUE,
+    slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     type TEXT NOT NULL,
     rarity TEXT NOT NULL,

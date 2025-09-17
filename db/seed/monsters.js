@@ -1235,6 +1235,1464 @@ export async function seedMonsters() {
                 '[{"name":"Multiattack", "desc":"Makes three attacks: one with bite and two with claws."}]',
                 '[]',
                 'Perception +4'
+            ),
+                        (
+                'hill-giant', 'Hill Giant', 'Huge', 'giant', null, 'chaotic evil',
+                13, 105, '10d12+40', '{"walk":"40 ft."}', 1800,
+                21, 8, 19, 5, 9, 6,
+                ARRAY['A dim-witted but brutally strong giant that raids for food and loot.'],
+                '[{"name":"Greatclub","desc":"Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) bludgeoning."},{"name":"Rock","desc":"Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 5) bludgeoning."}]',
+                '[]',
+                'Athletics +8, Perception +2'
+            ),
+            (
+                'hippogriff', 'Hippogriff', 'Large', 'monstrosity', null, 'unaligned',
+                11, 19, '3d10+3', '{"fly":"60 ft.","walk":"40 ft."}', 200,
+                17, 13, 13, 2, 12, 8,
+                ARRAY['A proud creature with the body of a horse and the wings and head of an eagle.'],
+                '[{"name":"Beak","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing."},{"name":"Claws","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'hobgoblin', 'Hobgoblin', 'Medium', 'humanoid', 'goblinoid', 'lawful evil',
+                18, 11, '2d8+2', '{"walk":"30 ft."}', 100,
+                13, 12, 12, 10, 10, 9,
+                ARRAY['A disciplined goblinoid soldier who fights in formation.'],
+                '[{"name":"Longsword","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing, or 6 (1d10 + 1) if used two-handed."}]',
+                '[]',
+                'Athletics +3, Intimidation +1'
+            ),
+            (
+                'homunculus', 'Homunculus', 'Tiny', 'construct', null, 'neutral',
+                13, 5, '2d4', '{"fly":"40 ft.","walk":"20 ft."}', 50,
+                4, 15, 11, 10, 10, 7,
+                ARRAY['A tiny construct created as a wizard’s familiar and assistant.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing plus 3 (1d6) poison."}]',
+                '[]',
+                'Perception +2, Stealth +4'
+            ),
+            (
+                'horned-devil', 'Horned Devil', 'Large', 'fiend', 'devil', 'lawful evil',
+                18, 148, '16d10+64', '{"fly":"60 ft.","walk":"20 ft."}', 11000,
+                22, 17, 20, 12, 16, 17,
+                ARRAY['A brutal enforcer of the Nine Hells, bristling with spines and a barbed tail.'],
+                '[{"name":"Fork","desc":"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing."},{"name":"Tail","desc":"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 10 (1d8 + 6) piercing + 14 (4d6) fire."}]',
+                '[{"name":"Infernal Glare","desc":"The devil targets one creature it can see within 10 ft.; DC 14 Wis save or the target is frightened until end of its next turn."}]',
+                'Intimidation +8, Perception +7'
+            ),
+            (
+                'hunter-shark', 'Hunter Shark', 'Large', 'beast', null, 'unaligned',
+                12, 45, '6d10+12', '{"swim":"40 ft."}', 200,
+                18, 13, 15, 1, 10, 4,
+                ARRAY['A relentless ocean predator drawn to the scent of blood.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'hydra', 'Hydra', 'Huge', 'monstrosity', null, 'unaligned',
+                15, 172, '15d12+75', '{"swim":"30 ft.","walk":"30 ft."}', 3900,
+                20, 12, 20, 2, 10, 7,
+                ARRAY['A multiheaded reptile; severed heads regrow unless fire cauterizes the wound.'],
+                '[{"name":"Multiattack","desc":"The hydra makes as many bite attacks as it has heads."},{"name":"Bite","desc":"Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) piercing."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'hyena', 'Hyena', 'Small', 'beast', null, 'unaligned',
+                11, 5, '1d8+1', '{"walk":"50 ft."}', 10,
+                11, 13, 12, 2, 12, 5,
+                ARRAY['A scavenging pack-hunter with a mocking cackle.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'imp', 'Imp', 'Tiny', 'fiend', 'devil', 'lawful evil',
+                13, 10, '3d4+3', '{"fly":"40 ft.","walk":"20 ft."}', 200,
+                6, 17, 13, 11, 12, 14,
+                ARRAY['A sneaky devil that serves as a familiar, adept at stings and trickery.'],
+                '[{"name":"Sting","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing plus 7 (2d6) poison (DC 11 Con half)."}]',
+                '[]',
+                'Deception +4, Stealth +5'
+            ),
+            (
+                'invisible-stalker', 'Invisible Stalker', 'Medium', 'elemental', null, 'neutral',
+                14, 104, '16d8+32', '{"fly":"50 ft.","walk":"50 ft."}', 2300,
+                16, 19, 14, 10, 15, 11,
+                ARRAY['An unseen elemental tracker that never yields once on a quarry’s trail.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning."}]',
+                '[]',
+                'Perception +8, Stealth +10'
+            ),
+            (
+                'iron-golem', 'Iron Golem', 'Large', 'construct', null, 'lawful neutral',
+                20, 210, '20d10+100', '{"walk":"30 ft."}', 15000,
+                24, 9, 20, 3, 11, 1,
+                ARRAY['A hulking construct of iron that belches poison gas and resists magic.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 20 (3d8 + 7) bludgeoning."}]',
+                '[]',
+                ''
+            ),
+            (
+                'jackal', 'Jackal', 'Small', 'beast', null, 'unaligned',
+                12, 3, '1d6', '{"walk":"40 ft."}', 10,
+                8, 15, 11, 3, 12, 6,
+                ARRAY['A wiry scavenger with keen senses and speed.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'jackalwere', 'Jackalwere', 'Medium', 'humanoid', 'shapechanger', 'chaotic evil',
+                12, 18, '4d8', '{"walk":"40 ft."}', 100,
+                11, 15, 11, 13, 11, 10,
+                ARRAY['A jackal-headed trickster that uses sleep magic to waylay prey.'],
+                '[{"name":"Scimitar","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing."}]',
+                '[]',
+                'Deception +2, Stealth +4'
+            ),
+            (
+                'kenku', 'Kenku', 'Medium', 'humanoid', 'kenku', 'chaotic neutral',
+                13, 13, '3d8', '{"walk":"30 ft."}', 50,
+                10, 16, 10, 11, 10, 10,
+                ARRAY['Crow-like mimics who communicate with stolen sounds and gestures.'],
+                '[{"name":"Shortsword","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing."}]',
+                '[]',
+                'Deception +2, Stealth +5'
+            ),
+            (
+                'killer-whale', 'Killer Whale', 'Huge', 'beast', null, 'unaligned',
+                12, 90, '12d12+12', '{"swim":"60 ft."}', 1100,
+                19, 10, 12, 3, 12, 7,
+                ARRAY['A powerful marine hunter that works in coordinated pods.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'knight', 'Knight', 'Medium', 'humanoid', 'any race', 'any lawful alignment',
+                18, 52, '8d8+16', '{"walk":"30 ft."}', 700,
+                16, 11, 14, 11, 11, 15,
+                ARRAY['An armored noble or veteran sworn to a code of chivalry.'],
+                '[{"name":"Longsword","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing, or 9 (1d10 + 4) if used two-handed."}]',
+                '[]',
+                'Persuasion +4, Athletics +5'
+            ),
+            (
+                'kobold', 'Kobold', 'Small', 'humanoid', 'kobold', 'lawful evil',
+                12, 5, '2d6-2', '{"walk":"30 ft."}', 25,
+                7, 15, 9, 8, 7, 8,
+                ARRAY['A small reptilian humanoid that relies on traps and pack tactics.'],
+                '[{"name":"Dagger","desc":"Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'kraken', 'Kraken', 'Gargantuan', 'monstrosity', null, 'chaotic evil',
+                18, 472, '27d20+189', '{"swim":"60 ft.","walk":"20 ft."}', 50000,
+                30, 11, 25, 22, 18, 20,
+                ARRAY['A primordial sea terror whose storms and tentacles can shatter fleets.'],
+                '[{"name":"Tentacle","desc":"Melee Weapon Attack: +17 to hit, reach 30 ft., one target. Hit: 20 (3d6 + 10) bludgeoning and grapple."}]',
+                '[{"name":"Fling","desc":"The kraken hurls a grappled creature or object up to 60 feet."}]',
+                'Perception +10'
+            ),
+            (
+                'kuo-toa', 'Kuo-Toa', 'Medium', 'humanoid', 'kuo-toa', 'neutral evil',
+                13, 18, '4d8', '{"swim":"30 ft.","walk":"30 ft."}', 100,
+                13, 10, 11, 11, 10, 8,
+                ARRAY['An amphibious fish-folk zealot found in lightless depths.'],
+                '[{"name":"Spear","desc":"Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'kuo-toa-archpriest', 'Kuo-Toa Archpriest', 'Medium', 'humanoid', 'kuo-toa', 'neutral evil',
+                13, 97, '13d8+39', '{"swim":"30 ft.","walk":"30 ft."}', 2300,
+                14, 10, 16, 14, 16, 14,
+                ARRAY['A fervent kuo-toa hierophant whose mad faith fuels potent miracles.'],
+                '[{"name":"Scepter","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning."}]',
+                '[]',
+                'Insight +6, Religion +6'
+            ),
+                        (
+                'lemure', 'Lemure', 'Medium', 'fiend', 'devil', 'lawful evil',
+                7, 13, '3d8', '{"walk":"15 ft."}', 10,
+                10, 5, 11, 1, 11, 3,
+                ARRAY['A mindless mass of infernal flesh, lowest of devilkind.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage."}]',
+                '[]',
+                ''
+            ),
+            (
+                'lich', 'Lich', 'Medium', 'undead', null, 'any evil alignment',
+                17, 135, '18d8+54', '{"walk":"30 ft."}', 33000,
+                11, 16, 16, 20, 14, 16,
+                ARRAY['An immortal archmage bound to a phylactery, master of deathly magic.'],
+                '[{"name":"Paralyzing Touch","desc":"Melee Spell Attack: +12 to hit, reach 5 ft., one creature. Hit: 10 (3d6) cold damage and DC 18 Con save or paralyzed for 1 minute."}]',
+                '[{"name":"Legendary Resistance","desc":"If the lich fails a saving throw, it can choose to succeed instead (3/day)."}]',
+                'Arcana +12, History +12, Insight +8, Perception +8'
+            ),
+            (
+                'lizard', 'Lizard', 'Tiny', 'beast', null, 'unaligned',
+                10, 2, '1d4', '{"climb":"20 ft.","walk":"20 ft."}', 10,
+                2, 13, 10, 1, 8, 3,
+                ARRAY['A small reptile that scampers across rocks and walls.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'lizardfolk', 'Lizardfolk', 'Medium', 'humanoid', 'lizardfolk', 'neutral',
+                15, 22, '4d8+4', '{"swim":"30 ft.","walk":"30 ft."}', 100,
+                15, 10, 13, 7, 12, 7,
+                ARRAY['Stoic reptilian humanoids who craft from bone and scales.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Survival +5'
+            ),
+            (
+                'mage', 'Mage', 'Medium', 'humanoid', 'any race', 'any alignment',
+                12, 40, '9d8', '{"walk":"30 ft."}', 2300,
+                9, 14, 12, 17, 12, 11,
+                ARRAY['A learned spellcaster-for-hire, warded by protective magic.'],
+                '[{"name":"Quarterstaff","desc":"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning, or 4 (1d8) if two-handed."}]',
+                '[]',
+                'Arcana +6, History +6'
+            ),
+            (
+                'magma-mephit', 'Magma Mephit', 'Small', 'elemental', null, 'neutral evil',
+                11, 22, '5d6+5', '{"fly":"30 ft.","walk":"30 ft."}', 100,
+                8, 12, 12, 7, 10, 10,
+                ARRAY['A sizzling sprite of molten rock that spatters fiery sludge.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing + 2 (1d4) fire."}]',
+                '[]',
+                ''
+            ),
+            (
+                'magmin', 'Magmin', 'Small', 'elemental', null, 'chaotic neutral',
+                14, 9, '2d6+2', '{"walk":"30 ft."}', 100,
+                7, 15, 12, 8, 11, 10,
+                ARRAY['A mischievous emberkin that sets the world alight wherever it dances.'],
+                '[{"name":"Touch","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d6) fire damage and ignites flammable objects."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'mammoth', 'Mammoth', 'Huge', 'beast', null, 'unaligned',
+                13, 126, '11d12+55', '{"walk":"40 ft."}', 2300,
+                24, 9, 21, 3, 11, 6,
+                ARRAY['A towering woolly behemoth with curving tusks.'],
+                '[{"name":"Gore","desc":"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'manticore', 'Manticore', 'Large', 'monstrosity', null, 'lawful evil',
+                14, 68, '8d10+24', '{"fly":"50 ft.","walk":"30 ft."}', 700,
+                17, 16, 17, 7, 12, 8,
+                ARRAY['A leonine hunter with bat wings and a tail that fires iron spikes.'],
+                '[{"name":"Multiattack","desc":"The manticore makes three attacks: one with its bite and two with its claws or three with tail spikes."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'marilith', 'Marilith', 'Large', 'fiend', 'demon', 'chaotic evil',
+                18, 189, '18d10+90', '{"walk":"40 ft."}', 15000,
+                18, 20, 20, 18, 16, 20,
+                ARRAY['A six-armed serpent-bodied general of the Abyss.'],
+                '[{"name":"Multiattack","desc":"The marilith makes six longsword attacks and one tail attack."}]',
+                '[{"name":"Teleport","desc":"The marilith magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."}]',
+                'Deception +9, Insight +8'
+            ),
+            (
+                'mastiff', 'Mastiff', 'Medium', 'beast', null, 'unaligned',
+                12, 5, '1d8+1', '{"walk":"40 ft."}', 25,
+                13, 14, 12, 3, 12, 7,
+                ARRAY['A loyal guard dog with a crushing bite.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'medusa', 'Medusa', 'Medium', 'monstrosity', null, 'lawful evil',
+                15, 127, '15d8+60', '{"walk":"30 ft."}', 2300,
+                10, 15, 16, 12, 13, 15,
+                ARRAY['A cursed humanoid with serpents for hair and a petrifying gaze.'],
+                '[{"name":"Shortsword","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing."},{"name":"Longbow","desc":"Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing + 7 (2d6) poison."}]',
+                '[]',
+                'Deception +5, Perception +4, Stealth +5'
+            ),
+            (
+                'merfolk', 'Merfolk', 'Medium', 'humanoid', 'merfolk', 'neutral',
+                11, 11, '2d8+2', '{"swim":"40 ft.","walk":"10 ft."}', 25,
+                10, 13, 12, 11, 11, 12,
+                ARRAY['A sea-dwelling humanoid with a fishlike tail and keen trident work.'],
+                '[{"name":"Spear","desc":"Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'merrow', 'Merrow', 'Large', 'monstrosity', null, 'chaotic evil',
+                13, 45, '6d10+12', '{"swim":"40 ft.","walk":"10 ft."}', 450,
+                18, 10, 15, 8, 10, 9,
+                ARRAY['A savage aquatic ogre that drags prey into the depths.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'mimic', 'Mimic', 'Medium', 'monstrosity', null, 'neutral',
+                12, 58, '9d8+18', '{"walk":"15 ft."}', 450,
+                17, 12, 15, 5, 13, 8,
+                ARRAY['A shapeshifting predator that disguises itself as objects, often chests or doors.'],
+                '[{"name":"Pseudopod","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning plus 4 (1d8) acid."}]',
+                '[]',
+                'Stealth +5'
+            ),
+            (
+                'minotaur', 'Minotaur', 'Large', 'monstrosity', null, 'chaotic evil',
+                14, 76, '9d10+27', '{"walk":"40 ft."}', 700,
+                18, 11, 16, 6, 16, 9,
+                ARRAY['A horned labyrinth-stalker that charges with devastating force.'],
+                '[{"name":"Greataxe","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing."}]',
+                '[]',
+                'Perception +5'
+            ),
+            (
+                'minotaur-skeleton', 'Minotaur Skeleton', 'Large', 'undead', null, 'lawful evil',
+                12, 67, '9d10+18', '{"walk":"40 ft."}', 450,
+                18, 11, 15, 6, 8, 5,
+                ARRAY['The animated bones of a minotaur, still relentless in pursuit.'],
+                '[{"name":"Greataxe","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing."}]',
+                '[]',
+                ''
+            ),
+            (
+                'mule', 'Mule', 'Medium', 'beast', null, 'unaligned',
+                10, 11, '2d8+2', '{"walk":"40 ft."}', 25,
+                14, 10, 13, 2, 10, 5,
+                ARRAY['A hardy pack animal prized for endurance.'],
+                '[{"name":"Hooves","desc":"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning."}]',
+                '[]',
+                ''
+            ),
+            (
+                'mummy', 'Mummy', 'Medium', 'undead', null, 'lawful evil',
+                11, 58, '9d8+18', '{"walk":"20 ft."}', 700,
+                16, 8, 15, 6, 10, 12,
+                ARRAY['A desiccated, bandage-wrapped guardian cursed with necrotic power.'],
+                '[{"name":"Rotting Fist","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning + 10 (3d6) necrotic; DC 12 Con save or mummy rot."}]',
+                '[]',
+                'Intimidation +3'
+            ),
+                        (
+                'mummy-lord', 'Mummy Lord', 'Medium', 'undead', null, 'lawful evil',
+                17, 97, '13d8+39', '{"walk":"20 ft."}', 13000,
+                18, 10, 17, 11, 18, 16,
+                ARRAY['A high priest preserved by dark rites; commands plagues and curses from its tomb.'],
+                '[{"name":"Rotting Fist","desc":"Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 14 (3d6 + 4) bludgeoning + 21 (6d6) necrotic; DC 16 Con save vs. mummy rot."}]',
+                '[{"name":"Legendary Resistance","desc":"If the mummy lord fails a saving throw, it can choose to succeed instead (3/day)."}]',
+                'Religion +7, Insight +7'
+            ),
+            (
+                'nightmare', 'Nightmare', 'Large', 'fiend', null, 'neutral evil',
+                13, 68, '8d10+24', '{"fly":"90 ft.","walk":"60 ft."}', 700,
+                18, 15, 16, 10, 12, 13,
+                ARRAY['A hell-forged steed wreathed in smoke and flame.'],
+                '[{"name":"Hooves","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning + 7 (2d6) fire."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'night-hag', 'Night Hag', 'Medium', 'fiend', 'hag', 'neutral evil',
+                17, 112, '15d8+45', '{"walk":"30 ft."}', 1800,
+                18, 15, 16, 16, 14, 16,
+                ARRAY['A soul-trading hag that prowls dreams and the Ethereal.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing."}]',
+                '[]',
+                'Deception +6, Insight +5'
+            ),
+            (
+                'nothic', 'Nothic', 'Medium', 'aberration', null, 'neutral evil',
+                15, 45, '6d8+18', '{"walk":"30 ft."}', 450,
+                14, 16, 16, 13, 10, 8,
+                ARRAY['A warped, one-eyed seer that pries secrets with a baleful gaze.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing."}]',
+                '[]',
+                'Arcana +3, Insight +2'
+            ),
+            (
+                'ochre-jelly', 'Ochre Jelly', 'Large', 'ooze', null, 'unaligned',
+                8, 45, '6d10+12', '{"climb":"10 ft.","walk":"10 ft."}', 450,
+                15, 6, 14, 2, 6, 1,
+                ARRAY['A corrosive blob that splits when slashed and dissolves metal and flesh.'],
+                '[{"name":"Pseudopod","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning + 7 (2d6) acid."}]',
+                '[]',
+                ''
+            ),
+            (
+                'octopus', 'Octopus', 'Small', 'beast', null, 'unaligned',
+                12, 3, '1d6', '{"swim":"30 ft.","walk":"5 ft."}', 10,
+                4, 15, 11, 2, 10, 4,
+                ARRAY['A small cephalopod that jets through water and clouds it with ink.'],
+                '[{"name":"Tentacles","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 bludgeoning and grapple (escape DC 10)."}]',
+                '[]',
+                'Stealth +4, Perception +2'
+            ),
+            (
+                'ogre', 'Ogre', 'Large', 'giant', null, 'chaotic evil',
+                11, 59, '7d10+21', '{"walk":"40 ft."}', 450,
+                19, 8, 16, 5, 7, 7,
+                ARRAY['A hulking brute that smashes foes with a tree-sized club.'],
+                '[{"name":"Greatclub","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning."}]',
+                '[]',
+                'Athletics +6'
+            ),
+            (
+                'ogre-zombie', 'Ogre Zombie', 'Large', 'undead', null, 'neutral evil',
+                8, 85, '9d10+27', '{"walk":"30 ft."}', 450,
+                19, 6, 18, 3, 6, 5,
+                ARRAY['A reanimated ogre that shambles on with grim resilience.'],
+                '[{"name":"Morningstar","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing."}]',
+                '[]',
+                ''
+            ),
+            (
+                'oni', 'Oni', 'Large', 'giant', null, 'lawful evil',
+                16, 110, '13d10+39', '{"fly":"30 ft.","walk":"30 ft."}', 2900,
+                19, 11, 16, 14, 12, 15,
+                ARRAY['Also called ogre mages—deceptive, flying giants with spell-like powers.'],
+                '[{"name":"Glaive","desc":"Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) slashing."}]',
+                '[]',
+                'Deception +6'
+            ),
+            (
+                'orc', 'Orc', 'Medium', 'humanoid', 'orc', 'chaotic evil',
+                13, 15, '2d8+6', '{"walk":"30 ft."}', 100,
+                16, 12, 16, 7, 11, 10,
+                ARRAY['A brutal raider driven by bloodlust and tribal pride.'],
+                '[{"name":"Greataxe","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing."}]',
+                '[]',
+                'Intimidation +2'
+            ),
+            (
+                'orc-warchief', 'Orc Warchief', 'Medium', 'humanoid', 'orc', 'chaotic evil',
+                16, 93, '11d8+44', '{"walk":"30 ft."}', 1100,
+                18, 12, 18, 11, 11, 16,
+                ARRAY['A ruthless orc leader who drives warriors into a killing frenzy.'],
+                '[{"name":"Greataxe","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (1d12 + 4) slashing."}]',
+                '[]',
+                'Intimidation +5'
+            ),
+            (
+                'otyugh', 'Otyugh', 'Large', 'aberration', null, 'neutral',
+                14, 114, '12d10+48', '{"walk":"30 ft."}', 1800,
+                16, 11, 19, 6, 13, 6,
+                ARRAY['A filth-dwelling scavenger with three tentacles and a slavering maw.'],
+                '[{"name":"Tentacle","desc":"Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning and grapple."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'owl', 'Owl', 'Tiny', 'beast', null, 'unaligned',
+                11, 1, '1d4-1', '{"fly":"60 ft.","walk":"5 ft."}', 10,
+                3, 13, 8, 2, 12, 7,
+                ARRAY['A silent night hunter with keen hearing and sight.'],
+                '[{"name":"Talons","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 slashing."}]',
+                '[]',
+                'Perception +5, Stealth +3'
+            ),
+            (
+                'owlbear', 'Owlbear', 'Large', 'monstrosity', null, 'unaligned',
+                13, 59, '7d10+21', '{"walk":"40 ft."}', 700,
+                20, 12, 17, 3, 12, 7,
+                ARRAY['A ferocious cross of bear and owl that tears prey apart.'],
+                '[{"name":"Multiattack","desc":"The owlbear makes two attacks: one with its beak and one with its claws."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'panther', 'Panther', 'Medium', 'beast', null, 'unaligned',
+                12, 13, '3d8', '{"climb":"40 ft.","walk":"50 ft."}', 50,
+                14, 15, 10, 3, 14, 7,
+                ARRAY['A sleek ambusher that pounces from branches and undergrowth.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Perception +4, Stealth +6'
+            ),
+            (
+                'pegasus', 'Pegasus', 'Large', 'celestial', null, 'chaotic good',
+                12, 59, '7d10+21', '{"fly":"90 ft.","walk":"60 ft."}', 450,
+                18, 15, 16, 10, 15, 13,
+                ARRAY['A winged steed of purest virtue that soars the heavens.'],
+                '[{"name":"Hooves","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning."}]',
+                '[]',
+                'Perception +5'
+            ),
+            (
+                'phase-spider', 'Phase Spider', 'Large', 'monstrosity', null, 'neutral',
+                13, 32, '5d10', '{"climb":"30 ft.","walk":"30 ft."}', 700,
+                15, 15, 12, 6, 10, 6,
+                ARRAY['An ethereal-hopping spider that ambushes from another plane.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing + 10 (3d6) poison."}]',
+                '[]',
+                'Stealth +6'
+            ),
+            (
+                'piercer', 'Piercer', 'Medium', 'monstrosity', null, 'unaligned',
+                15, 22, '4d8+4', '{"climb":"5 ft.","walk":"5 ft."}', 200,
+                10, 13, 12, 1, 7, 3,
+                ARRAY['A stalactite-mimicking ambusher that drops on prey from cave ceilings.'],
+                '[{"name":"Drop","desc":"The piercer drops onto a creature beneath it; on a hit, takes 10 (3d6) bludgeoning and the target takes 10 (3d6) piercing."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'plesiosaurus', 'Plesiosaurus', 'Large', 'beast', null, 'unaligned',
+                13, 68, '8d10+24', '{"swim":"40 ft.","walk":"20 ft."}', 700,
+                18, 15, 16, 2, 12, 5,
+                ARRAY['A long-necked marine reptile that lunges from the depths.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+                        (
+                'poisonous-snake', 'Poisonous Snake', 'Tiny', 'beast', null, 'unaligned',
+                13, 2, '1d4', '{"swim":"30 ft.","walk":"30 ft."}', 25,
+                2, 16, 11, 1, 10, 3,
+                ARRAY['A small serpent whose venomous bite can fell larger prey.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 1 piercing + 5 (2d4) poison; DC 10 Con save for half."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'polar-bear', 'Polar Bear', 'Large', 'beast', null, 'unaligned',
+                12, 42, '5d10+15', '{"swim":"40 ft.","walk":"40 ft."}', 450,
+                20, 10, 16, 2, 13, 7,
+                ARRAY['A white-furred predator of arctic seas and ice floes.'],
+                '[{"name":"Multiattack","desc":"The bear makes two attacks: one with its bite and one with its claws."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'pony', 'Pony', 'Medium', 'beast', null, 'unaligned',
+                10, 11, '2d8+2', '{"walk":"40 ft."}', 25,
+                13, 10, 12, 2, 11, 7,
+                ARRAY['A sturdy small horse used for riding or burden.'],
+                '[{"name":"Hooves","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning."}]',
+                '[]',
+                ''
+            ),
+            (
+                'priest', 'Priest', 'Medium', 'humanoid', 'any race', 'any alignment',
+                13, 27, '5d8+5', '{"walk":"30 ft."}', 450,
+                10, 10, 12, 13, 16, 13,
+                ARRAY['A cleric devoted to the gods, channeling divine magic.'],
+                '[{"name":"Mace","desc":"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning."}]',
+                '[]',
+                'Medicine +5, Religion +4'
+            ),
+            (
+                'pseudodragon', 'Pseudodragon', 'Tiny', 'dragon', null, 'neutral good',
+                13, 7, '2d4+2', '{"fly":"60 ft.","walk":"15 ft."}', 50,
+                6, 15, 13, 10, 12, 10,
+                ARRAY['A cat-sized, dragonlike familiar with a barbed, poisonous stinger.'],
+                '[{"name":"Sting","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing + 3 (1d6) poison; DC 11 Con save or poisoned 1 hour, unconscious while poisoned."}]',
+                '[]',
+                'Perception +3, Stealth +4'
+            ),
+            (
+                'purple-worm', 'Purple Worm', 'Gargantuan', 'monstrosity', null, 'unaligned',
+                18, 247, '15d20+90', '{"burrow":"30 ft.","walk":"50 ft."}', 15000,
+                28, 7, 22, 1, 8, 4,
+                ARRAY['A titanic tunneler that devours earth, stone, and prey alike.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d8 + 9) piercing, and if target is Medium or smaller it is swallowed."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'quasit', 'Quasit', 'Tiny', 'fiend', 'demon', 'chaotic evil',
+                13, 7, '3d4', '{"climb":"20 ft.","fly":"40 ft.","walk":"40 ft."}', 200,
+                5, 17, 10, 7, 10, 10,
+                ARRAY['A minor demon that delights in invisibility, terror, and mischief.'],
+                '[{"name":"Claw","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) slashing + 3 (1d6) poison; DC 10 Con save or poisoned 1 minute."}]',
+                '[]',
+                'Stealth +5'
+            ),
+            (
+                'quipper', 'Quipper', 'Tiny', 'beast', null, 'unaligned',
+                13, 1, '1d4-1', '{"swim":"40 ft."}', 10,
+                2, 16, 9, 1, 7, 2,
+                ARRAY['A ravenous fish that swarms in schools, stripping prey to bone.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing."}]',
+                '[]',
+                ''
+            ),
+            (
+                'rakshasa', 'Rakshasa', 'Medium', 'fiend', null, 'lawful evil',
+                16, 110, '13d8+52', '{"walk":"40 ft."}', 10000,
+                13, 17, 18, 13, 16, 20,
+                ARRAY['A tiger-headed sorcerer-fiend, master of illusion and enchantment.'],
+                '[{"name":"Claw","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing + curse (disadv. on saves vs. spells)."}]',
+                '[]',
+                'Deception +10, Insight +8'
+            ),
+            (
+                'rat', 'Rat', 'Tiny', 'beast', null, 'unaligned',
+                10, 1, '1d4-1', '{"walk":"20 ft."}', 10,
+                2, 11, 9, 2, 10, 4,
+                ARRAY['A small scavenger found in nearly all settlements.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing."}]',
+                '[]',
+                'Perception +0'
+            ),
+            (
+                'raven', 'Raven', 'Tiny', 'beast', null, 'unaligned',
+                12, 1, '1d4-1', '{"fly":"50 ft.","walk":"10 ft."}', 10,
+                2, 14, 8, 2, 12, 6,
+                ARRAY['A clever black bird known for mimicry and omens.'],
+                '[{"name":"Beak","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'red-dragon-wyrmling', 'Red Dragon Wyrmling', 'Medium', 'dragon', null, 'chaotic evil',
+                17, 75, '10d8+30', '{"fly":"60 ft.","walk":"30 ft."}', 2300,
+                19, 10, 17, 12, 11, 15,
+                ARRAY['A young but terrifying red dragon, breathing fire even in infancy.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing + 3 (1d6) fire."}]',
+                '[]',
+                'Perception +4, Stealth +2'
+            ),
+            (
+                'reef-shark', 'Reef Shark', 'Medium', 'beast', null, 'unaligned',
+                12, 22, '4d8+4', '{"swim":"40 ft."}', 100,
+                14, 13, 13, 1, 10, 4,
+                ARRAY['A mid-sized ocean predator, often in hunting packs.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'remorhaz', 'Remorhaz', 'Huge', 'monstrosity', null, 'unaligned',
+                17, 195, '17d12+85', '{"burrow":"20 ft.","walk":"30 ft."}', 10000,
+                24, 13, 21, 4, 10, 5,
+                ARRAY['A colossal arctic predator, its body searing with internal fire.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 40 (6d10 + 7) piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'rhinoceros', 'Rhinoceros', 'Large', 'beast', null, 'unaligned',
+                11, 45, '6d10+12', '{"walk":"40 ft."}', 200,
+                21, 8, 15, 2, 12, 6,
+                ARRAY['A thick-skinned herbivore that charges with a deadly horn.'],
+                '[{"name":"Gore","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'roc', 'Roc', 'Gargantuan', 'monstrosity', null, 'unaligned',
+                15, 248, '16d20+80', '{"fly":"120 ft.","walk":"20 ft."}', 33000,
+                28, 10, 20, 3, 10, 9,
+                ARRAY['A monstrous bird of legend, big enough to carry off elephants.'],
+                '[{"name":"Beak","desc":"Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 27 (4d8 + 9) piercing."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'rook', 'Rook', 'Small', 'beast', null, 'unaligned',
+                12, 3, '1d6', '{"fly":"40 ft.","walk":"10 ft."}', 25,
+                8, 15, 10, 2, 12, 6,
+                ARRAY['A black-plumed scavenger bird found near battlefields.'],
+                '[{"name":"Beak","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'rug-of-smothering', 'Rug of Smothering', 'Large', 'construct', null, 'unaligned',
+                12, 33, '6d10', '{"walk":"10 ft."}', 450,
+                17, 14, 10, 1, 3, 1,
+                ARRAY['A cursed carpet that animates to wrap and suffocate victims.'],
+                '[{"name":"Smother","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: target is grappled (escape DC 13), restrained, blinded, and at risk of suffocation."}]',
+                '[]',
+                ''
+            ),
+                        (
+                'rust-monster', 'Rust Monster', 'Medium', 'monstrosity', null, 'unaligned',
+                14, 27, '5d8+5', '{"walk":"40 ft."}', 100,
+                13, 12, 13, 2, 13, 6,
+                ARRAY['An insectile hunter that corrodes metal with its antennae.'],
+                '[{"name":"Antennae","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target wearing or carrying metal. Hit: The target\'s nonmagical metal corrodes."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'saber-toothed-tiger', 'Saber-Toothed Tiger', 'Large', 'beast', null, 'unaligned',
+                12, 52, '7d10+14', '{"walk":"40 ft."}', 450,
+                18, 14, 15, 3, 12, 8,
+                ARRAY['A powerful prehistoric cat that ambushes with a devastating pounce.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (1d10 + 7) piercing."}]',
+                '[]',
+                'Perception +3, Stealth +6'
+            ),
+            (
+                'sahuagin', 'Sahuagin', 'Medium', 'humanoid', 'sahuagin', 'lawful evil',
+                12, 22, '4d8+4', '{"swim":"40 ft.","walk":"30 ft."}', 100,
+                13, 11, 12, 12, 13, 9,
+                ARRAY['Shark-worshiping raiders of the deep, swift and cruel.'],
+                '[{"name":"Spear","desc":"Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Perception +5'
+            ),
+            (
+                'sahuagin-priestess', 'Sahuagin Priestess', 'Medium', 'humanoid', 'sahuagin', 'lawful evil',
+                12, 33, '6d8+6', '{"swim":"40 ft.","walk":"30 ft."}', 450,
+                13, 11, 12, 12, 15, 13,
+                ARRAY['A fanatical sahuagin matriarch who wields dark oceanic rites.'],
+                '[{"name":"Scepter","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning."}]',
+                '[]',
+                'Insight +4, Religion +4'
+            ),
+            (
+                'salamander', 'Salamander', 'Large', 'elemental', null, 'neutral evil',
+                15, 90, '12d10+24', '{"walk":"30 ft."}', 1800,
+                18, 14, 15, 11, 10, 12,
+                ARRAY['A serpentine being of living fire that sears with its heated weapons.'],
+                '[{"name":"Spear","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d8 + 7) piercing + 7 (2d6) fire."}]',
+                '[]',
+                ''
+            ),
+            (
+                'satyr', 'Satyr', 'Medium', 'fey', null, 'chaotic neutral',
+                14, 31, '7d8', '{"walk":"40 ft."}', 100,
+                12, 16, 11, 12, 10, 14,
+                ARRAY['A capering reveler whose music and tricks beguile travelers.'],
+                '[{"name":"Ram","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning."}]',
+                '[]',
+                'Performance +6, Stealth +5'
+            ),
+            (
+                'scarecrow', 'Scarecrow', 'Medium', 'construct', null, 'chaotic evil',
+                11, 36, '8d8', '{"walk":"30 ft."}', 200,
+                11, 13, 11, 10, 10, 7,
+                ARRAY['A straw-filled terror animated by dark harvest magic.'],
+                '[{"name":"Claw","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing."}]',
+                '[]',
+                ''
+            ),
+            (
+                'scorpion', 'Scorpion', 'Tiny', 'beast', null, 'unaligned',
+                11, 1, '1d4-1', '{"climb":"10 ft.","walk":"10 ft."}', 10,
+                2, 11, 8, 1, 8, 2,
+                ARRAY['A small desert arachnid with a venomous sting.'],
+                '[{"name":"Sting","desc":"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 1 piercing + 2 (1d4) poison."}]',
+                '[]',
+                ''
+            ),
+            (
+                'scout', 'Scout', 'Medium', 'humanoid', 'any race', 'any alignment',
+                13, 16, '3d8+3', '{"walk":"30 ft."}', 100,
+                11, 14, 12, 11, 13, 11,
+                ARRAY['A lightly armored skirmisher who maps routes and strikes from range.'],
+                '[{"name":"Shortsword","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Nature +4, Perception +5, Stealth +6, Survival +5'
+            ),
+            (
+                'sea-hag', 'Sea Hag', 'Medium', 'fey', null, 'chaotic evil',
+                14, 52, '7d8+21', '{"swim":"40 ft.","walk":"30 ft."}', 450,
+                16, 13, 16, 12, 12, 13,
+                ARRAY['An ugly crone of the surf whose horrid visage saps courage.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'sea-horse', 'Sea Horse', 'Tiny', 'beast', null, 'unaligned',
+                11, 1, '1d4-1', '{"swim":"20 ft."}', 10,
+                1, 12, 8, 1, 10, 2,
+                ARRAY['A tiny seahorse that drifts among sea grasses.'],
+                '[{"name":"Ram","desc":"Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 bludgeoning."}]',
+                '[]',
+                ''
+            ),
+            (
+                'shadow', 'Shadow', 'Medium', 'undead', null, 'chaotic evil',
+                12, 16, '3d8+3', '{"walk":"40 ft."}', 100,
+                6, 14, 13, 6, 10, 8,
+                ARRAY['A living darkness that drains the strength of the living.'],
+                '[{"name":"Strength Drain","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) necrotic; target\'s Str reduced by 1d4."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'shadow-demon', 'Shadow Demon', 'Medium', 'fiend', 'demon', 'chaotic evil',
+                13, 66, '12d8+12', '{"fly":"30 ft.","walk":"30 ft."}', 1100,
+                1, 22, 12, 14, 13, 14,
+                ARRAY['A bodiless fiend of gloom and terror, difficult to strike.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) psychic."}]',
+                '[]',
+                'Stealth +9, Perception +4'
+            ),
+            (
+                'shambling-mound', 'Shambling Mound', 'Large', 'plant', null, 'unaligned',
+                15, 136, '16d10+48', '{"swim":"20 ft.","walk":"20 ft."}', 1800,
+                18, 8, 16, 5, 10, 5,
+                ARRAY['A rotting heap of vegetation animated by primal wrath.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning; if both slams hit, the target is grappled (escape DC 14)."}]',
+                '[]',
+                ''
+            ),
+            (
+                'shield-guardian', 'Shield Guardian', 'Large', 'construct', null, 'neutral',
+                17, 142, '15d10+60', '{"walk":"30 ft."}', 2900,
+                18, 8, 18, 7, 10, 3,
+                ARRAY['A towering bodyguard bound to an amulet, absorbing harm for its master.'],
+                '[{"name":"Fist","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'shrieker', 'Shrieker', 'Medium', 'plant', null, 'unaligned',
+                5, 13, '3d8', '{"walk":"0 ft."}', 10,
+                1, 1, 10, 1, 3, 1,
+                ARRAY['A fungus that emits a piercing cry when light or movement is near.'],
+                '[{"name":"Shriek","desc":"When bright light or a creature is within 30 ft., the shrieker emits a loud noise until the stimulus ends."}]',
+                '[]',
+                ''
+            ),
+            (
+                'skeleton', 'Skeleton', 'Medium', 'undead', null, 'lawful evil',
+                13, 13, '2d8+4', '{"walk":"30 ft."}', 50,
+                10, 14, 15, 6, 8, 5,
+                ARRAY['An animated pile of bones that obeys necromantic commands.'],
+                '[{"name":"Shortsword","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'solar', 'Solar', 'Large', 'celestial', null, 'lawful good',
+                21, 243, '18d10+144', '{"fly":"150 ft.","walk":"50 ft."}', 33000,
+                26, 22, 26, 25, 25, 30,
+                ARRAY['A supreme angelic champion whose radiance lays low the wicked.'],
+                '[{"name":"Greatsword","desc":"Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 22 (4d6 + 8) slashing + 27 (6d8) radiant."}]',
+                '[{"name":"Legendary Resistance","desc":"If the solar fails a saving throw, it can choose to succeed instead (3/day)."}]',
+                'Insight +14, Perception +14'
+            ),
+            (
+                'specter', 'Specter', 'Medium', 'undead', null, 'chaotic evil',
+                12, 22, '5d8', '{"fly":"50 ft.","hover":true}', 200,
+                1, 14, 11, 10, 10, 11,
+                ARRAY['A vengeful spirit ripped from its mortal shell.'],
+                '[{"name":"Life Drain","desc":"Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 10 (3d6) necrotic; DC 10 Con save or hit point maximum is reduced."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'spider', 'Spider', 'Tiny', 'beast', null, 'unaligned',
+                12, 1, '1d4-1', '{"climb":"20 ft.","walk":"20 ft."}', 10,
+                2, 14, 8, 1, 10, 2,
+                ARRAY['A small arachnid that creeps along walls and ceilings.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 1 piercing + 3 (1d6) poison."}]',
+                '[]',
+                'Stealth +4'
+            ),
+                        (
+                'spirit-naga', 'Spirit Naga', 'Large', 'monstrosity', null, 'chaotic evil',
+                15, 75, '10d10+20', '{"walk":"40 ft."}', 3900,
+                18, 17, 14, 16, 15, 16,
+                ARRAY['A serpentine naga steeped in dark magic and malice.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 10 (1d8 + 6) piercing plus 7 (2d6) poison damage."}]',
+                '[]',
+                'Arcana +6, Perception +5'
+            ),
+            (
+                'sprite', 'Sprite', 'Tiny', 'fey', null, 'neutral good',
+                15, 2, '1d4', '{"fly":"40 ft.","walk":"10 ft."}', 25,
+                3, 18, 10, 14, 13, 11,
+                ARRAY['A diminutive winged fey with a sharp sense of justice.'],
+                '[{"name":"Shortbow","desc":"Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or be poisoned."}]',
+                '[]',
+                'Perception +3, Stealth +8'
+            ),
+            (
+                'stag', 'Stag', 'Large', 'beast', null, 'unaligned',
+                12, 32, '5d10+5', '{"walk":"50 ft."}', 200,
+                16, 14, 12, 2, 12, 6,
+                ARRAY['A majestic deer with impressive antlers.'],
+                '[{"name":"Ram","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'steam-mephit', 'Steam Mephit', 'Small', 'elemental', null, 'neutral evil',
+                10, 21, '6d6', '{"fly":"30 ft.","walk":"30 ft."}', 100,
+                5, 11, 10, 11, 10, 12,
+                ARRAY['A small elemental trickster exuding scalding steam.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) slashing damage."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'stirge', 'Stirge', 'Tiny', 'beast', null, 'unaligned',
+                14, 2, '1d4', '{"fly":"40 ft."}', 25,
+                4, 16, 11, 2, 8, 6,
+                ARRAY['A horrid bat-like creature that drains the blood of its victims.'],
+                '[{"name":"Blood Drain","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target."}]',
+                '[]',
+                'Stealth +5'
+            ),
+            (
+                'stone-giant', 'Stone Giant', 'Huge', 'giant', null, 'neutral',
+                17, 126, '11d12+55', '{"walk":"40 ft."}', 3900,
+                23, 15, 20, 10, 12, 9,
+                ARRAY['A reclusive giant that dwells among rocks and caves.'],
+                '[{"name":"Greatclub","desc":"Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."}]',
+                '[]',
+                'Athletics +9, Perception +5'
+            ),
+            (
+                'stone-golem', 'Stone Golem', 'Large', 'construct', null, 'unaligned',
+                17, 178, '17d10+85', '{"walk":"30 ft."}', 7200,
+                22, 9, 20, 10, 11, 11,
+                ARRAY['A massive humanoid statue animated to guard sacred places.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."}]',
+                '[]',
+                ''
+            ),
+            (
+                'storm-giant', 'Storm Giant', 'Huge', 'giant', null, 'chaotic good',
+                16, 230, '20d12+100', '{"swim":"50 ft.","walk":"50 ft."}', 25000,
+                29, 14, 20, 16, 18, 18,
+                ARRAY['A towering giant who wields thunder and lightning in battle.'],
+                '[{"name":"Greatsword","desc":"Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 30 (6d6 + 9) slashing damage."}]',
+                '[{"name":"Legendary Resistance","desc":"If the storm giant fails a saving throw, it can choose to succeed instead (3/day)."}]',
+                'Arcana +9, Perception +9'
+            ),
+            (
+                'succubus', 'Succubus/Incubus', 'Medium', 'fiend', 'demon', 'neutral evil',
+                15, 66, '12d8+12', '{"fly":"60 ft.","walk":"30 ft."}', 1800,
+                8, 17, 13, 15, 12, 20,
+                ARRAY['A fiend who tempts mortals with beauty and drains their life force.'],
+                '[{"name":"Charm","desc":"The fiend targets one humanoid it can see within 30 ft. The target must succeed on a DC 15 Wisdom saving throw or be magically charmed."}]',
+                '[]',
+                'Deception +9, Persuasion +9'
+            ),
+            (
+                'swarm-of-bats', 'Swarm of Bats', 'Medium', 'swarm of Tiny beasts', null, 'unaligned',
+                12, 22, '5d8', '{"fly":"30 ft."}', 100,
+                5, 15, 10, 2, 12, 4,
+                ARRAY['A cloud of bats that wheels and bites as one.'],
+                '[{"name":"Bites","desc":"Melee Weapon Attack: +4 to hit, reach 0 ft., one target in the swarm\'s space. Hit: 10 (4d4) piercing damage."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'swarm-of-beetles', 'Swarm of Insects (Beetles)', 'Medium', 'swarm of Tiny beasts', null, 'unaligned',
+                12, 22, '5d8', '{"walk":"20 ft.","climb":"20 ft."}', 100,
+                3, 13, 10, 1, 7, 1,
+                ARRAY['A crawling carpet of beetles that bites and chews in unison.'],
+                '[{"name":"Bites","desc":"Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm\'s space. Hit: 10 (4d4) piercing damage."}]',
+                '[]',
+                'Stealth +3'
+            ),
+            (
+                'swarm-of-centipedes', 'Swarm of Insects (Centipedes)', 'Medium', 'swarm of Tiny beasts', null, 'unaligned',
+                12, 22, '5d8', '{"walk":"20 ft.","climb":"20 ft."}', 100,
+                3, 13, 10, 1, 7, 1,
+                ARRAY['A writhing mass of venomous centipedes that bites in concert.'],
+                '[{"name":"Bites","desc":"Melee Weapon Attack: +3 to hit, reach 0 ft., one target in the swarm\'s space. Hit: 10 (4d4) piercing damage."}]',
+                '[]',
+                'Stealth +3'
+            ),
+            (
+                'swarm-of-poisonous-snakes', 'Swarm of Poisonous Snakes', 'Medium', 'swarm of Tiny beasts', null, 'unaligned',
+                14, 36, '8d8', '{"swim":"30 ft.","walk":"30 ft."}', 200,
+                8, 18, 11, 1, 10, 3,
+                ARRAY['A tangle of serpents that strikes with many fangs.'],
+                '[{"name":"Bites","desc":"Melee Weapon Attack: +6 to hit, reach 0 ft., one target in the swarm\'s space. Hit: 14 (4d6) piercing damage plus 14 (4d6) poison."}]',
+                '[]',
+                'Stealth +6'
+            ),
+            (
+                'swarm-of-quippers', 'Swarm of Quippers', 'Medium', 'swarm of Tiny beasts', null, 'unaligned',
+                13, 28, '8d8-8', '{"swim":"40 ft."}', 200,
+                13, 16, 9, 1, 7, 2,
+                ARRAY['A feeding frenzy of vicious piranha-like fish.'],
+                '[{"name":"Bites","desc":"Melee Weapon Attack: +5 to hit, reach 0 ft., one target in the swarm\'s space. Hit: 14 (4d6) piercing damage."}]',
+                '[]',
+                ''
+            ),
+            (
+                'swarm-of-rats', 'Swarm of Rats', 'Medium', 'swarm of Tiny beasts', null, 'unaligned',
+                10, 24, '7d8-7', '{"walk":"30 ft."}', 50,
+                9, 11, 9, 2, 10, 4,
+                ARRAY['A wriggling pack of rats that bites and overwhelms.'],
+                '[{"name":"Bites","desc":"Melee Weapon Attack: +2 to hit, reach 0 ft., one target in the swarm\'s space. Hit: 7 (2d6) piercing damage."}]',
+                '[]',
+                ''
+            ),
+            (
+                'swarm-of-ravens', 'Swarm of Ravens', 'Medium', 'swarm of Tiny beasts', null, 'unaligned',
+                12, 24, '7d8-7', '{"fly":"50 ft."}', 50,
+                6, 14, 8, 3, 12, 6,
+                ARRAY['A black cloud of ravens that descends on prey in a frenzy.'],
+                '[{"name":"Beaks","desc":"Melee Weapon Attack: +4 to hit, reach 0 ft., one target in the swarm\'s space. Hit: 7 (2d6) piercing damage."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'tarrasque', 'Tarrasque', 'Gargantuan', 'monstrosity', null, 'unaligned',
+                25, 676, '33d20+330', '{"walk":"40 ft."}', 155000,
+                30, 11, 30, 3, 11, 11,
+                ARRAY['The most dreaded monster of the Material Plane, nearly unstoppable.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +19 to hit, reach 10 ft., one target. Hit: 36 (4d12 + 10) piercing damage."}]',
+                '[{"name":"Legendary Resistance","desc":"If the tarrasque fails a saving throw, it can choose to succeed instead (3/day)."}]',
+                'Perception +10'
+            ),
+            (
+                'thug', 'Thug', 'Medium', 'humanoid', 'any race', 'any non-good alignment',
+                11, 32, '5d8+10', '{"walk":"30 ft."}', 100,
+                15, 11, 14, 10, 10, 11,
+                ARRAY['A violent criminal who fights dirty with pack tactics.'],
+                '[{"name":"Mace","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."}]',
+                '[]',
+                'Intimidation +2'
+            ),
+            (
+                'tiger', 'Tiger', 'Large', 'beast', null, 'unaligned',
+                12, 37, '5d10+10', '{"walk":"40 ft.","swim":"20 ft."}', 200,
+                17, 15, 14, 3, 12, 8,
+                ARRAY['A stealthy big cat that stalks and pounces on prey.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage."}]',
+                '[]',
+                'Perception +3, Stealth +6'
+            ),
+                        (
+                'titan', 'Titan', 'Huge', 'celestial', null, 'neutral good',
+                20, 280, '20d12+120', '{"walk":"40 ft."}', 25000,
+                30, 12, 22, 16, 18, 18,
+                ARRAY['A god-touched giant of staggering power and ancient wisdom.'],
+                '[{"name":"Greatsword","desc":"Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 30 (4d6 + 10) slashing."},{"name":"Rock","desc":"Ranged Weapon Attack: +14 to hit, range 60/240 ft., one target. Hit: 35 (6d10 + 8) bludgeoning."}]',
+                '[{"name":"Legendary Resistance","desc":"If the titan fails a saving throw, it can choose to succeed instead (3/day)."}]',
+                'Insight +10, Perception +10'
+            ),
+            (
+                'treant', 'Treant', 'Huge', 'plant', null, 'chaotic good',
+                16, 138, '12d12+60', '{"walk":"30 ft."}', 5000,
+                23, 8, 21, 12, 16, 12,
+                ARRAY['An awakened tree guardian that strides to defend the forest.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) bludgeoning."},{"name":"Rock","desc":"Ranged Weapon Attack: +10 to hit, range 60/180 ft., one target. Hit: 28 (4d10 + 6) bludgeoning."}]',
+                '[]',
+                'Perception +6'
+            ),
+            (
+                'tribal-warrior', 'Tribal Warrior', 'Medium', 'humanoid', 'any race', 'any alignment',
+                12, 11, '2d8+2', '{"walk":"30 ft."}', 25,
+                13, 12, 12, 8, 11, 8,
+                ARRAY['A clan fighter who defends their people with spear and shield.'],
+                '[{"name":"Spear","desc":"Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Athletics +3, Intimidation +2'
+            ),
+            (
+                'triceratops', 'Triceratops', 'Huge', 'beast', null, 'unaligned',
+                13, 95, '10d12+30', '{"walk":"50 ft."}', 1800,
+                22, 9, 17, 2, 11, 5,
+                ARRAY['A massive three-horned dinosaur that charges with unstoppable force.'],
+                '[{"name":"Gore","desc":"Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8 + 6) piercing."}]',
+                '[]',
+                ''
+            ),
+            (
+                'troglodyte', 'Troglodyte', 'Medium', 'humanoid', 'troglodyte', 'chaotic evil',
+                11, 13, '2d8+4', '{"walk":"30 ft."}', 50,
+                14, 10, 14, 6, 10, 10,
+                ARRAY['A reeking cave-dweller that fights with claws, bite, and ambush.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'troll', 'Troll', 'Large', 'giant', null, 'chaotic evil',
+                15, 84, '8d10+40', '{"walk":"30 ft."}', 1800,
+                18, 13, 20, 7, 9, 7,
+                ARRAY['A ravenous regenerating giant with gangling limbs and claws.'],
+                '[{"name":"Claw","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'tyrannosaurus-rex', 'Tyrannosaurus Rex', 'Huge', 'beast', null, 'unaligned',
+                13, 136, '13d12+52', '{"walk":"50 ft."}', 3900,
+                25, 10, 19, 2, 12, 9,
+                ARRAY['An apex predator with a bone-crushing bite and thunderous stride.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 33 (4d12 + 7) piercing."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'unicorn', 'Unicorn', 'Large', 'celestial', null, 'lawful good',
+                12, 67, '9d10+18', '{"walk":"50 ft."}', 1800,
+                18, 14, 15, 11, 17, 16,
+                ARRAY['A radiant steed whose horn heals the pure of heart.'],
+                '[{"name":"Hooves","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning."},{"name":"Horn","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing."}]',
+                '[{"name":"Healing Touch","desc":"The unicorn touches another creature. The target magically regains 11 (2d8 + 2) HP."}]',
+                'Insight +6, Perception +6'
+            ),
+            (
+                'vampire', 'Vampire', 'Medium', 'undead', null, 'lawful evil',
+                16, 144, '17d8+68', '{"climb":"30 ft.","walk":"30 ft."}', 10000,
+                18, 18, 18, 17, 15, 18,
+                ARRAY['An immortal predator who commands the night and drinks blood.'],
+                '[{"name":"Unarmed Strike","desc":"Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning plus grapple."},{"name":"Bite","desc":"Melee Weapon Attack: +9 to hit, reach 5 ft., one willing or grappled creature. Hit: 7 (1d6 + 4) piercing + 10 (3d6) necrotic."}]',
+                '[{"name":"Legendary Resistance","desc":"If the vampire fails a saving throw, it can choose to succeed instead (3/day)."}]',
+                'Perception +6, Stealth +6'
+            ),
+            (
+                'vampire-spawn', 'Vampire Spawn', 'Medium', 'undead', null, 'neutral evil',
+                15, 82, '11d8+33', '{"climb":"30 ft.","walk":"30 ft."}', 1800,
+                16, 16, 16, 11, 10, 12,
+                ARRAY['A lesser vampire bound to its creator, hungry for living blood.'],
+                '[{"name":"Claws","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing and grapple."}]',
+                '[]',
+                'Perception +2, Stealth +4'
+            ),
+            (
+                'veteran', 'Veteran', 'Medium', 'humanoid', 'any race', 'any alignment',
+                17, 58, '9d8+18', '{"walk":"30 ft."}', 700,
+                16, 13, 14, 10, 11, 10,
+                ARRAY['A battle-hardened soldier skilled with sword and crossbow.'],
+                '[{"name":"Longsword","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing, or 9 (1d10 + 4) if used two-handed."}]',
+                '[]',
+                'Athletics +5'
+            ),
+            (
+                'vine-blight', 'Vine Blight', 'Medium', 'plant', null, 'neutral evil',
+                12, 26, '4d8+8', '{"walk":"10 ft."}', 100,
+                15, 8, 14, 5, 10, 3,
+                ARRAY['A writhing tangle of vines that restrains and crushes intruders.'],
+                '[{"name":"Constrict","desc":"Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 9 (2d6 + 2) bludgeoning and grapple (escape DC 12)."}]',
+                '[]',
+                'Stealth +3'
+            ),
+            (
+                'violet-fungus', 'Violet Fungus', 'Medium', 'plant', null, 'unaligned',
+                5, 18, '4d8', '{"walk":"5 ft."}', 50,
+                3, 1, 10, 1, 3, 1,
+                ARRAY['A rotting cavern fungus with whipping necrotic tendrils.'],
+                '[{"name":"Rotting Touch","desc":"Melee Weapon Attack: +2 to hit, reach 10 ft., one creature. Hit: 4 (1d8) necrotic damage."}]',
+                '[]',
+                ''
+            ),
+            (
+                'vrock', 'Vrock', 'Large', 'fiend', 'demon', 'chaotic evil',
+                15, 104, '11d10+44', '{"fly":"60 ft.","walk":"40 ft."}', 2300,
+                17, 15, 18, 8, 13, 8,
+                ARRAY['A vulture-headed demon that shrieks and rends with talons.'],
+                '[{"name":"Talons","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slashing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'vulture', 'Vulture', 'Medium', 'beast', null, 'unaligned',
+                10, 5, '1d8+1', '{"fly":"50 ft.","walk":"10 ft."}', 10,
+                7, 10, 12, 2, 12, 4,
+                ARRAY['A carrion bird that circles the skies for an easy meal.'],
+                '[{"name":"Beak","desc":"Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing."}]',
+                '[]',
+                'Perception +3'
+            ),
+            (
+                'warhorse', 'Warhorse', 'Large', 'beast', null, 'unaligned',
+                11, 19, '3d10+3', '{"walk":"60 ft."}', 100,
+                18, 12, 13, 2, 12, 7,
+                ARRAY['A trained charger that tramples enemies under iron-shod hooves.'],
+                '[{"name":"Hooves","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning."}]',
+                '[]',
+                ''
+            ),
+            (
+                'warhorse-skeleton', 'Warhorse Skeleton', 'Large', 'undead', null, 'lawful evil',
+                13, 22, '3d10+6', '{"walk":"60 ft."}', 100,
+                18, 12, 15, 2, 8, 5,
+                ARRAY['The animated bones of a warhorse, heedless of pain and fear.'],
+                '[{"name":"Hooves","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning."}]',
+                '[]',
+                ''
+            ),
+            (
+                'water-elemental', 'Water Elemental', 'Large', 'elemental', null, 'neutral',
+                14, 114, '12d10+48', '{"swim":"90 ft.","walk":"30 ft."}', 1800,
+                18, 14, 18, 5, 10, 8,
+                ARRAY['A surging mass of living water that engulfs and drowns foes.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning."}]',
+                '[]',
+                ''
+            ),
+            (
+                'weasel', 'Weasel', 'Tiny', 'beast', null, 'unaligned',
+                13, 1, '1d4-1', '{"climb":"30 ft.","walk":"30 ft."}', 10,
+                3, 16, 8, 2, 12, 3,
+                ARRAY['A quick, burrowing hunter with a knack for slipping into tight spaces.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage."}]',
+                '[]',
+                'Perception +3, Stealth +4'
+            ),
+            (
+                'werebear', 'Werebear', 'Medium', 'humanoid', 'shapechanger', 'neutral good',
+                11, 135, '18d8+54', '{"walk":"30 ft."}', 1800,
+                19, 10, 17, 10, 13, 11,
+                ARRAY['A kind but fierce shapechanger who becomes a towering bear in battle.'],
+                '[{"name":"Greataxe","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (1d12 + 4) slashing."}]',
+                '[]',
+                'Perception +4'
+            ),
+                        (
+                'wereboar', 'Wereboar', 'Medium', 'humanoid', 'shapechanger', 'neutral evil',
+                10, 78, '12d8+24', '{"walk":"30 ft."}', 1100,
+                17, 10, 15, 10, 11, 8,
+                ARRAY['A cursed humanoid that transforms into a savage boar hybrid.'],
+                '[{"name":"Maul","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'wererat', 'Wererat', 'Medium', 'humanoid', 'shapechanger', 'lawful evil',
+                12, 33, '6d8+6', '{"walk":"30 ft."}', 200,
+                10, 15, 12, 11, 10, 8,
+                ARRAY['A sly shapechanger that spreads disease in rat form.'],
+                '[{"name":"Shortsword","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing."}]',
+                '[]',
+                'Stealth +4'
+            ),
+            (
+                'weretiger', 'Weretiger', 'Medium', 'humanoid', 'shapechanger', 'neutral',
+                12, 120, '16d8+48', '{"walk":"30 ft."}', 2900,
+                17, 15, 16, 10, 13, 11,
+                ARRAY['A balanced and secretive shapechanger who takes tiger form.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing."}]',
+                '[]',
+                'Perception +3, Stealth +4'
+            ),
+            (
+                'werewolf', 'Werewolf', 'Medium', 'humanoid', 'shapechanger', 'chaotic evil',
+                11, 58, '9d8+18', '{"walk":"30 ft."}', 700,
+                15, 13, 14, 10, 11, 10,
+                ARRAY['A savage humanoid cursed to stalk and slaughter as a wolf.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing."}]',
+                '[]',
+                'Perception +2'
+            ),
+            (
+                'white-dragon-wyrmling', 'White Dragon Wyrmling', 'Medium', 'dragon', null, 'chaotic evil',
+                16, 32, '5d8+10', '{"fly":"60 ft.","walk":"30 ft.","burrow":"15 ft.","swim":"30 ft."}', 700,
+                14, 10, 14, 5, 10, 11,
+                ARRAY['A young white dragon, cruel and hungry, breathing frost even in infancy.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing + 3 (1d6) cold."}]',
+                '[]',
+                'Perception +2, Stealth +2'
+            ),
+            (
+                'wight', 'Wight', 'Medium', 'undead', null, 'neutral evil',
+                14, 45, '6d8+18', '{"walk":"30 ft."}', 1100,
+                15, 14, 16, 10, 13, 15,
+                ARRAY['A malevolent undead that drains the life from its foes.'],
+                '[{"name":"Longsword","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing."}]',
+                '[]',
+                'Perception +3, Stealth +4'
+            ),
+            (
+                'will-o-wisp', 'Will-o\'-Wisp', 'Tiny', 'undead', null, 'chaotic evil',
+                19, 22, '9d4', '{"fly":"50 ft.","hover":true}', 1100,
+                1, 28, 10, 13, 14, 11,
+                ARRAY['A floating orb of light, the soul of a perished evil, luring the lost to doom.'],
+                '[{"name":"Shock","desc":"Melee Spell Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d8) lightning."}]',
+                '[]',
+                'Stealth +8'
+            ),
+            (
+                'winter-wolf', 'Winter Wolf', 'Large', 'monstrosity', null, 'neutral evil',
+                13, 75, '10d10+20', '{"walk":"50 ft."}', 1800,
+                18, 13, 14, 7, 12, 8,
+                ARRAY['A massive white-furred wolf that exhales icy breath.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing + 7 (2d6) cold."}]',
+                '[]',
+                'Perception +4, Stealth +3'
+            ),
+            (
+                'wolf', 'Wolf', 'Medium', 'beast', null, 'unaligned',
+                13, 11, '2d8+2', '{"walk":"40 ft."}', 50,
+                12, 15, 12, 3, 12, 6,
+                ARRAY['A pack predator that hunts with cunning teamwork.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing."}]',
+                '[]',
+                'Perception +3, Stealth +4'
+            ),
+            (
+                'worg', 'Worg', 'Large', 'monstrosity', null, 'neutral evil',
+                13, 26, '4d10+4', '{"walk":"50 ft."}', 200,
+                16, 13, 13, 7, 11, 8,
+                ARRAY['An evil, intelligent wolf often serving goblins.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing."}]',
+                '[]',
+                'Perception +2, Stealth +2'
+            ),
+            (
+                'wraith', 'Wraith', 'Medium', 'undead', null, 'neutral evil',
+                13, 67, '9d8+27', '{"fly":"60 ft.","hover":true}', 1800,
+                6, 16, 16, 12, 14, 15,
+                ARRAY['A shadowy undead that drains life essence to fuel its hatred.'],
+                '[{"name":"Life Drain","desc":"Melee Spell Attack: +6 to hit, reach 5 ft., one creature. Hit: 21 (4d8 + 3) necrotic."}]',
+                '[]',
+                'Stealth +6, Perception +4'
+            ),
+            (
+                'wyvern', 'Wyvern', 'Large', 'dragon', null, 'unaligned',
+                13, 110, '13d10+39', '{"fly":"80 ft.","walk":"20 ft."}', 3900,
+                19, 10, 16, 5, 12, 6,
+                ARRAY['A draconic predator with a venomous stinger.'],
+                '[{"name":"Stinger","desc":"Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) piercing + 24 (7d6) poison."}]',
+                '[]',
+                'Perception +4'
+            ),
+            (
+                'xorn', 'Xorn', 'Medium', 'elemental', null, 'neutral',
+                19, 73, '7d8+42', '{"burrow":"20 ft.","walk":"20 ft."}', 1800,
+                17, 10, 22, 11, 10, 11,
+                ARRAY['A rocky elemental that eats precious metals and gems.'],
+                '[{"name":"Claw","desc":"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing."}]',
+                '[]',
+                'Perception +3, Stealth +3'
+            ),
+            (
+                'young-black-dragon', 'Young Black Dragon', 'Large', 'dragon', null, 'chaotic evil',
+                18, 127, '15d10+45', '{"fly":"80 ft.","walk":"40 ft.","swim":"40 ft."}', 5900,
+                19, 14, 17, 12, 11, 15,
+                ARRAY['A juvenile black dragon, cruel and cunning, breathing acid.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing + 4 (1d8) acid."}]',
+                '[]',
+                'Perception +5, Stealth +5'
+            ),
+            (
+                'young-blue-dragon', 'Young Blue Dragon', 'Large', 'dragon', null, 'lawful evil',
+                18, 152, '16d10+64', '{"fly":"80 ft.","walk":"40 ft.","burrow":"30 ft."}', 5900,
+                21, 10, 19, 14, 11, 15,
+                ARRAY['A juvenile blue dragon, proud and tyrannical, breathing lightning.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing + 5 (1d10) lightning."}]',
+                '[]',
+                'Perception +5, Stealth +3'
+            ),
+            (
+                'young-brass-dragon', 'Young Brass Dragon', 'Large', 'dragon', null, 'chaotic good',
+                17, 110, '13d10+39', '{"fly":"80 ft.","walk":"40 ft.","burrow":"20 ft."}', 5900,
+                19, 10, 17, 12, 11, 15,
+                ARRAY['A juvenile brass dragon, talkative and curious, breathing fire.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing + 5 (1d10) fire."}]',
+                '[]',
+                'Perception +5, Stealth +3'
+            ),
+            (
+                'young-bronze-dragon', 'Young Bronze Dragon', 'Large', 'dragon', null, 'lawful good',
+                18, 142, '15d10+60', '{"fly":"80 ft.","walk":"40 ft.","swim":"40 ft."}', 5900,
+                21, 10, 19, 14, 11, 17,
+                ARRAY['A juvenile bronze dragon, defenders of coasts, breathing lightning.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing + 5 (1d10) lightning."}]',
+                '[]',
+                'Perception +6, Stealth +3'
+            ),
+            (
+                'young-copper-dragon', 'Young Copper Dragon', 'Large', 'dragon', null, 'chaotic good',
+                17, 119, '14d10+42', '{"fly":"80 ft.","walk":"40 ft.","climb":"40 ft."}', 5900,
+                18, 12, 17, 16, 13, 15,
+                ARRAY['A juvenile copper dragon, mischievous and witty, breathing acid.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing + 4 (1d8) acid."}]',
+                '[]',
+                'Perception +6, Stealth +4'
+            ),
+            (
+                'young-gold-dragon', 'Young Gold Dragon', 'Large', 'dragon', null, 'lawful good',
+                18, 178, '17d10+85', '{"fly":"80 ft.","walk":"40 ft.","swim":"40 ft."}', 8400,
+                23, 14, 21, 16, 13, 17,
+                ARRAY['A juvenile gold dragon, noble and wise, breathing fire.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing + 5 (1d10) fire."}]',
+                '[]',
+                'Perception +6, Stealth +4'
+            ),
+                        (
+                'young-green-dragon', 'Young Green Dragon', 'Large', 'dragon', null, 'lawful evil',
+                18, 136, '16d10+48', '{"fly":"80 ft.","walk":"40 ft.","swim":"40 ft."}', 5900,
+                19, 12, 17, 16, 13, 15,
+                ARRAY['A cunning juvenile green dragon, master of deception, breathing poison.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 4) piercing + 7 (2d6) poison."}]',
+                '[]',
+                'Perception +6, Stealth +4'
+            ),
+            (
+                'young-red-dragon', 'Young Red Dragon', 'Large', 'dragon', null, 'chaotic evil',
+                18, 178, '17d10+85', '{"fly":"80 ft.","walk":"40 ft.","climb":"40 ft."}', 8400,
+                23, 10, 21, 14, 11, 19,
+                ARRAY['A fierce juvenile red dragon, arrogant and destructive, breathing fire.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing + 7 (2d6) fire."}]',
+                '[]',
+                'Perception +6, Stealth +3'
+            ),
+            (
+                'young-silver-dragon', 'Young Silver Dragon', 'Large', 'dragon', null, 'lawful good',
+                18, 168, '16d10+80', '{"fly":"80 ft.","walk":"40 ft."}', 8400,
+                23, 10, 21, 14, 11, 19,
+                ARRAY['A noble juvenile silver dragon, kind to mortals, breathing cold.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing + 7 (2d6) cold."}]',
+                '[]',
+                'Perception +6, Stealth +3'
+            ),
+            (
+                'young-white-dragon', 'Young White Dragon', 'Large', 'dragon', null, 'chaotic evil',
+                17, 133, '14d10+70', '{"fly":"80 ft.","walk":"40 ft.","burrow":"30 ft.","swim":"40 ft."}', 5900,
+                18, 10, 18, 8, 11, 12,
+                ARRAY['A cruel juvenile white dragon, savage and hungry, breathing frost.'],
+                '[{"name":"Bite","desc":"Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing + 7 (2d6) cold."}]',
+                '[]',
+                'Perception +4, Stealth +2'
+            ),
+            (
+                'yuan-ti-abomination', 'Yuan-ti Abomination', 'Large', 'monstrosity', 'shapechanger', 'neutral evil',
+                15, 127, '15d10+45', '{"walk":"40 ft."}', 5900,
+                19, 16, 17, 17, 15, 18,
+                ARRAY['A monstrous serpent-bodied yuan-ti, cruel and serpentine.'],
+                '[{"name":"Scimitar","desc":"Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing."}]',
+                '[]',
+                'Deception +7, Perception +5, Stealth +6'
+            ),
+            (
+                'yuan-ti-malison', 'Yuan-ti Malison', 'Medium', 'monstrosity', 'shapechanger', 'neutral evil',
+                12, 66, '12d8+12', '{"walk":"30 ft.","swim":"30 ft."}', 1100,
+                16, 14, 13, 14, 12, 13,
+                ARRAY['A yuan-ti with a humanoid torso and serpent features.'],
+                '[{"name":"Scimitar","desc":"Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing."}]',
+                '[]',
+                'Deception +4, Stealth +4'
+            ),
+            (
+                'yuan-ti-pureblood', 'Yuan-ti Pureblood', 'Medium', 'monstrosity', null, 'neutral evil',
+                11, 40, '9d8', '{"walk":"30 ft."}', 200,
+                11, 12, 11, 13, 12, 14,
+                ARRAY['A serpent-blooded humanoid who infiltrates human societies.'],
+                '[{"name":"Scimitar","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing."}]',
+                '[]',
+                'Deception +4, Stealth +3'
+            ),
+            (
+                'zombie', 'Zombie', 'Medium', 'undead', null, 'neutral evil',
+                8, 22, '3d8+9', '{"walk":"20 ft."}', 100,
+                13, 6, 16, 3, 6, 5,
+                ARRAY['A mindless, reanimated corpse driven by hunger.'],
+                '[{"name":"Slam","desc":"Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning."}]',
+                '[]',
+                ''
             )
             `);
         console.log('✅ Monsters seeded successfully!');

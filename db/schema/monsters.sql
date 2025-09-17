@@ -1,6 +1,6 @@
 CREATE TABLE monsters (
     id SERIAL PRIMARY KEY,
-    index TEXT NOT NULL UNIQUE,
+    slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     size TEXT NOT NULL,
     type TEXT NOT NULL,

@@ -1,6 +1,6 @@
 CREATE TABLE spell_list (
     id SERIAL PRIMARY KEY,
-    index TEXT NOT NULL UNIQUE,
+    slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     level INTEGER NOT NULL,
     school_id INTEGER REFERENCES spell_schools(id) ON DELETE CASCADE ON UPDATE CASCADE,
