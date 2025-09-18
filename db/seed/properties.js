@@ -1,94 +1,83 @@
 import db from '../db/client.js';
 
-export async function seedWeaponPropertyAssignments() {
+export async function seedProperties() {
   try {
-    await db.query('TRUNCATE weapon_property_assignments RESTART IDENTITY CASCADE');
+    await db.query('TRUNCATE properties RESTART IDENTITY CASCADE');
     await db.query(`
-      INSERT INTO weapon_property_assignments (weapon_index, property_index) VALUES
-      
-        -- Simple Melee
-        ('club', 'light'),
-        ('dagger', 'finesse'),
-        ('dagger', 'light'),
-        ('dagger', 'thrown'),
-        ('greatclub', 'two-handed'),
-        ('handaxe', 'light'),
-        ('handaxe', 'thrown'),
-        ('javelin', 'thrown'),
-        ('light-hammer', 'light'),
-        ('light-hammer', 'thrown'),
-        ('quarterstaff', 'versatile'),
-        ('sickle', 'light'),
-        ('spear', 'thrown'),
-        ('spear', 'versatile'),
-
-        -- Simple Ranged
-        ('crossbow-light', 'ammunition'),
-        ('crossbow-light', 'loading'),
-        ('crossbow-light', 'two-handed'),
-        ('dart', 'finesse'),
-        ('dart', 'thrown'),
-        ('shortbow', 'ammunition'),
-        ('shortbow', 'two-handed'),
-        ('sling', 'ammunition'),
-
-        -- Martial Melee
-        ('battleaxe', 'versatile'),
-        ('glaive', 'heavy'),
-        ('glaive', 'reach'),
-        ('glaive', 'two-handed'),
-        ('greataxe', 'heavy'),
-        ('greataxe', 'two-handed'),
-        ('greatsword', 'heavy'),
-        ('greatsword', 'two-handed'),
-        ('halberd', 'heavy'),
-        ('halberd', 'reach'),
-        ('halberd', 'two-handed'),
-        ('lance', 'reach'),
-        ('lance', 'special'),
-        ('longsword', 'versatile'),
-        ('maul', 'heavy'),
-        ('maul', 'two-handed'),
-        ('pike', 'heavy'),
-        ('pike', 'reach'),
-        ('pike', 'two-handed'),
-        ('rapier', 'finesse'),
-        ('scimitar', 'finesse'),
-        ('scimitar', 'light'),
-        ('shortsword', 'finesse'),
-        ('shortsword', 'light'),
-        ('trident', 'thrown'),
-        ('trident', 'versatile'),
-        ('warhammer', 'versatile'),
-        ('whip', 'finesse'),
-        ('whip', 'reach'),
-
-        -- Martial Ranged
-        ('blowgun', 'ammunition'),
-        ('blowgun', 'loading'),
-        ('crossbow-hand', 'ammunition'),
-        ('crossbow-hand', 'light'),
-        ('crossbow-hand', 'loading'),
-        ('crossbow-heavy', 'ammunition'),
-        ('crossbow-heavy', 'heavy'),
-        ('crossbow-heavy', 'loading'),
-        ('crossbow-heavy', 'two-handed'),
-        ('longbow', 'ammunition'),
-        ('longbow', 'heavy'),
-        ('longbow', 'two-handed'),
-        ('net', 'special'),
-        ('net', 'thrown'),
-
-        -- Optional block --
-        ('mace', 'special'),
-        ('flail', 'special'),
-        ('morningstar', 'special'),
-        ('war-pick', 'special')
+      INSERT INTO properties (index, name, description)
+      VALUES
+        (
+          'ammunition', 'Ammunition',
+          ARRAY[
+            'You can use this weapon to make a ranged attack only if you have ammunition to fire.',
+            'Drawing the ammunition is part of the attack.',
+            'At the end of the battle, you can recover half your expended ammunition.'
+          ]
+        ),
+        (
+          'finesse', 'Finesse',
+          ARRAY[
+            'When making an attack with a finesse weapon, you use your choice of Strength or Dexterity for the attack and damage rolls.',
+            'You must use the same ability for both rolls.'
+          ]
+        ),
+        (
+          'heavy', 'Heavy',
+          ARRAY[
+            'Small creatures have disadvantage on attack rolls with heavy weapons.',
+            'A heavy weapon is too large for a Small creature to use effectively.'
+          ]
+        ),
+        (
+          'light', 'Light',
+          ARRAY[
+            'A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.'
+          ]
+        ),
+        (
+          'loading', 'Loading',
+          ARRAY[
+            'Because of the time required to load this weapon, you can fire only one piece of ammunition when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.'
+          ]
+        ),
+        (
+          'reach', 'Reach',
+          ARRAY[
+            'This weapon adds 5 feet to your reach when you attack with it.',
+            'This property also determines your reach for opportunity attacks with the weapon.'
+          ]
+        ),
+        (
+          'special', 'Special',
+          ARRAY[
+            'A weapon with the special property has unusual rules governing its use, explained in the weapon’s description.'
+          ]
+        ),
+        (
+          'thrown', 'Thrown',
+          ARRAY[
+            'If a weapon has the thrown property, you can throw the weapon to make a ranged attack.',
+            'If the weapon is a melee weapon, use the same ability modifier for that attack and damage roll that you would use for a melee attack with the weapon.'
+          ]
+        ),
+        (
+          'two-handed', 'Two-Handed',
+          ARRAY[
+            'This weapon requires two hands when you attack with it.'
+          ]
+        ),
+        (
+          'versatile', 'Versatile',
+          ARRAY[
+            'This weapon can be used with one or two hands.',
+            'A damage value in parentheses appears with the property — this is the damage when the weapon is used with two hands.'
+          ]
+        )
     `);
-    console.log('✅ Weapon → Property assignments seeded successfully!');
+    console.log('✅ Properties seeded successfully!');
   } catch (err) {
-    console.error('❌ Error seeding weapon → property assignments: ', err);
+    console.error('❌ Error seeding properties: ', err);
   }
 }
 
-seedWeaponPropertyAssignments();
+seedProperties();

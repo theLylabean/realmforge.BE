@@ -1,10 +1,8 @@
 CREATE TABLE subraces (
-    id SERIAL PRIMARY KEY,
-    index TEXT NOT NULL UNIQUE,
-    name TEXT NOT NULL UNIQUE,
-    ability_bonuses JSONB,
-    language_options TEXT[],
-    traits TEXT[],
-    race_id INTEGER REFERENCES races(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    description TEXT[] NOT NULL
+  id SERIAL PRIMARY KEY,
+  slug TEXT UNIQUE NOT NULL,                            -- e.g., 'high-elf'
+  race_slug TEXT REFERENCES races(slug) ON DELETE CASCADE ON UPDATE CASCADE,
+  name TEXT NOT NULL,
+  description TEXT[] NOT NULL,
+  UNIQUE (race_slug, name)
 );

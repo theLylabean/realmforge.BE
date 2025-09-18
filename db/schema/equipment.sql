@@ -1,6 +1,6 @@
 CREATE TABLE equipment_list (
     id SERIAL PRIMARY KEY,
-    index TEXT NOT NULL UNIQUE,
+    slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
     category_id INTEGER REFERENCES equipment_categories(id) ON DELETE CASCADE ON UPDATE CASCADE,
     weight INTEGER NOT NULL,

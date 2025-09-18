@@ -1,14 +1,11 @@
 CREATE TABLE races (
-    index TEXT PRIMARY KEY,
-    name TEXT,
-    size TEXT,                   -- 'Small' | 'Medium'
-    speed INTEGER,               -- base walking speed in feet
-    ability_bonuses JSONB,       -- e.g. {"STR":2,"DEX":0,...}
-    alignment TEXT,
-    age TEXT,
-    size_description TEXT,
-    language_desc TEXT,
-    languages TEXT[],            -- ARRAY['Common','Elvish',...]
-    traits JSONB,                -- JSON string: [{"name":"Darkvision","desc":"..."}, ...]
-    subraces JSONB               -- JSON string: [{"index":"hill-dwarf","name":"Hill Dwarf",...}, ...]
+    id SERIAL PRIMARY KEY,
+    slug TEXT NOT NULL UNIQUE,
+    name TEXT NOT NULL UNIQUE,
+    speed INTEGER NOT NULL,
+    ability_bonuses JSONB NOT NULL,
+    alignment TEXT NOT NULL,
+    age INTEGER NOT NULL,
+    size TEXT NOT NULL,
+    size_desc TEXT[] NOT NULL
 );
