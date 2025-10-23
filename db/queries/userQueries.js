@@ -20,6 +20,20 @@ export async function createNewUser (first_name, last_name, email, username, pas
     }
 }
 
+// LOGIN user
+export async function getLogin (username) {
+    try {
+        const result = await db.query(
+            `SELECT * FROM users WHERE username = $1`,
+            [username]
+        );
+        return result.rows[0];
+    } catch (error) {
+        console.error('Error logging in. Username incorrect. Please try again.', error.message);
+        throw error;
+    }
+}
+
 // CHECK new users have a unique username & GET user info by Username for profile display
 export async function getUserByUsername (username) {
     try {
