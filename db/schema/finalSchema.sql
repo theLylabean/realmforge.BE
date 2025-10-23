@@ -1,5 +1,9 @@
+\set ON_ERROR_STOP on
+
 -- Drop all tables in dependency order
 \i db/schema/dropTables.sql
+
+CREATE EXTENSION IF NOT EXISTS citext;
 
 -- Create all tables (dependency order)
 \i db/schema/users.sql;
