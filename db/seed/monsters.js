@@ -1416,7 +1416,7 @@ export async function seedMonsters() {
                 '[]',
                 'Insight +6, Religion +6'
             ),
-                        (
+            (
                 'lemure', 'Lemure', 'Medium', 'fiend', 'devil', 'lawful evil',
                 7, 13, '3d8', '{"walk":"15 ft."}', 10,
                 10, 5, 11, 1, 11, 3,

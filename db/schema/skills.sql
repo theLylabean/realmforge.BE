@@ -1,0 +1,6 @@
+CREATE TABLE skills (
+    id SERIAL PRIMARY KEY,
+    index TEXT NOT NULL UNIQUE,
+    name TEXT NOT NULL UNIQUE,
+    ability_scores_id INTEGER NOT NULL REFERENCES ability_scores(id) ON DELETE CASCADE ON UPDATE CASCADE
+);

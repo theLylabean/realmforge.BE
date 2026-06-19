@@ -10,5 +10,7 @@ CREATE TABLE spell_list (
     material TEXT,
     duration TEXT,
     description TEXT[] NOT NULL,
-    higher_level TEXT[]
+    higher_level TEXT[],
+    ritual BOOLEAN DEFAULT false,
+    concentration BOOLEAN DEFAULT false
 );

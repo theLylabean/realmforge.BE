@@ -1,6 +1,6 @@
 import db from '../client.js';
 
-export async function seedMagicItemsBatch1() {
+export async function seedMagicItems() {
   try {
     await db.query(`
         INSERT INTO magic_items (index, name, type, rarity, requires_attunement, description) VALUES
