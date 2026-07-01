@@ -18,8 +18,8 @@ EXCEPTION WHEN duplicate_object THEN NULL; END $$;
 -- (Optional) Alignments (only if you want to constrain them)
 DO $$ BEGIN
   CREATE TYPE alignment AS ENUM (
-    'lawful good','neutral good','chaotic good',
-    'lawful neutral','neutral','chaotic neutral',
-    'lawful evil','neutral evil','chaotic evil','unaligned','any'
+    'Lawful Good','Neutral Good','Chaotic Good',
+    'Lawful Neutral','True Neutral','Chaotic Neutral',
+    'Lawful Evil','Neutral Evil','Chaotic Evil','Unaligned'
   );
 EXCEPTION WHEN duplicate_object THEN NULL; END $$;

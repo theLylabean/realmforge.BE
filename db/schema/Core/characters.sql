@@ -11,7 +11,7 @@ CREATE TABLE characters (
   level INTEGER DEFAULT 1,
   alignment TEXT,
   
-  race_id INTEGER REFERENCES races(id),
+  species_id INTEGER REFERENCES species(id),
   class_id INTEGER REFERENCES classes(id),
   background_id INTEGER REFERENCES backgrounds(id),
 

@@ -1,4 +1,4 @@
-CREATE TABLE races (
+CREATE TABLE species (
     id SERIAL PRIMARY KEY,
     slug TEXT NOT NULL UNIQUE,
     name TEXT NOT NULL UNIQUE,
