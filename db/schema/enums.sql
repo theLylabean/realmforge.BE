@@ -23,3 +23,14 @@ DO $$ BEGIN
     'Lawful Evil','Neutral Evil','Chaotic Evil','Unaligned'
   );
 EXCEPTION WHEN duplicate_object THEN NULL; END $$;
+
+DO $$ BEGIN
+  CREATE TYPE proficiency_type AS ENUM (
+    'skill',
+    'saving_throw',
+    'armor',
+    'weapon',
+    'tool',
+    'language'
+  );
+EXCEPTION WHEN duplicate_object THEN NULL; END $$;

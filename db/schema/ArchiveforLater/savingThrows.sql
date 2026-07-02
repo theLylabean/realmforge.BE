@@ -1,5 +1,5 @@
-CREATE TABLE saving_throws (
+CREATE TABLE saving_throw (
     id SERIAL PRIMARY KEY,
     index TEXT NOT NULL UNIQUE,
-    ability_scores_id INTEGER NOT NULL REFERENCES ability_scores(id) ON DELETE CASCADE ON UPDATE CASCADE
+    ability_score_id INTEGER NOT NULL REFERENCES ability_score(id) ON DELETE CASCADE ON UPDATE CASCADE
 );

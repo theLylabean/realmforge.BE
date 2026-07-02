@@ -3,7 +3,7 @@ import db from "../client";
 export async function getAllAbilityScores () {
     try {
         const result = await db.query(
-            `SELECT * FROM ability_scores`
+            `SELECT * FROM ability_score`
         );
         return result;
     } catch (error) {
@@ -15,7 +15,7 @@ export async function getAllAbilityScores () {
 export async function getAbilityScoresBySlug (slug) {
     try {
         const result = await db.query(
-            `SELECT * FROM ability_scores WHERE slug = $1`, [slug]
+            `SELECT * FROM ability_score WHERE slug = $1`, [slug]
         );
         return result.rows[0];
     } catch (error) {
@@ -48,17 +48,17 @@ export async function getSkillsByIndex (index) {
     }
 }
 
-export async function getSkillsForAbilitySlug (ability_scores_id) {
+export async function getSkillsForAbilitySlug (ability_score_id) {
     try {
         const result = await db.query(
             `SELECT 
             s.id,
             s.index,
             s.name,
-            s.ability_scores_id
+            s.ability_score_id
             FROM skills AS s
-            JOIN ability_scores AS a
-            ON s.ability_scores_id = a.id
+            JOIN ability_score AS a
+            ON s.ability_score_id = a.id
             WHERE a.slug = $1
             ORDER BY s.name
             `, 

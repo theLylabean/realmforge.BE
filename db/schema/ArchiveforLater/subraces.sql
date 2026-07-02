@@ -1,8 +1,8 @@
--- CREATE TABLE subraces (
+-- CREATE TABLE subspecies (
 --   id SERIAL PRIMARY KEY,
 --   slug TEXT UNIQUE NOT NULL,                            -- e.g., 'high-elf'
---   race_slug TEXT REFERENCES races(slug) ON DELETE CASCADE ON UPDATE CASCADE,
+--   species_slug TEXT REFERENCES species(slug) ON DELETE CASCADE ON UPDATE CASCADE,
 --   name TEXT NOT NULL,
 --   description TEXT[] NOT NULL,
---   UNIQUE (race_slug, name)
+--   UNIQUE (species_slug, name)
 -- );

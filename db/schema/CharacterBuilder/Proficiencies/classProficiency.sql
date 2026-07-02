@@ -1,0 +1,5 @@
+CREATE TABLE class_proficiency (
+    id SERIAL PRIMARY KEY,
+    class_id INTEGER REFERENCES char_class(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    proficiency_id INTEGER REFERENCES proficiency(id) ON DELETE CASCADE ON UPDATE CASCADE
+);

@@ -1,5 +1,5 @@
-CREATE TABLE subrace_languages (
-  subrace_slug  TEXT REFERENCES subraces(slug)  ON DELETE CASCADE ON UPDATE CASCADE,
-  language_slug TEXT REFERENCES languages(slug) ON DELETE CASCADE,
-  PRIMARY KEY (subrace_slug, language_slug)
+CREATE TABLE subspecies_language (
+  subspecies_slug  TEXT REFERENCES subspecies(slug)  ON DELETE CASCADE ON UPDATE CASCADE,
+  language_slug TEXT REFERENCES language(slug) ON DELETE CASCADE,
+  PRIMARY KEY (subspecies_slug, language_slug)
 );

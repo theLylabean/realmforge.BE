@@ -1,9 +1,0 @@
-CREATE TABLE features (
-    id SERIAL PRIMARY KEY,
-    slug TEXT NOT NULL UNIQUE,
-    name TEXT NOT NULL UNIQUE,
-    description TEXT[] NOT NULL,
-    level INTEGER,
-    class_id INTEGER REFERENCES char_class(id) ON DELETE CASCADE ON UPDATE CASCADE,
-    subclass_id INTEGER REFERENCES char_subclass(id) ON DELETE CASCADE ON UPDATE CASCADE
-);

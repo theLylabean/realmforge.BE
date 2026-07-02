@@ -1,5 +1,5 @@
-CREATE TABLE species_languages (
-  race_slug TEXT REFERENCES races(slug) ON DELETE CASCADE,
-  language_slug TEXT REFERENCES languages(slug) ON DELETE CASCADE,
-  PRIMARY KEY (race_slug, language_slug)
+CREATE TABLE species_language (
+  species_slug TEXT REFERENCES species(slug) ON DELETE CASCADE,
+  language_slug TEXT REFERENCES language(slug) ON DELETE CASCADE,
+  PRIMARY KEY (species_slug, language_slug)
 );

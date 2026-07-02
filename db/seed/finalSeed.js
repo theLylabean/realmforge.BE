@@ -6,13 +6,13 @@ dotenv.config();
 import db from "../client.js";
 import { seedAbilityScores } from "./abilityScores.js";
 import { seedArmor } from "./armor.js";
-import { seedArmorProficiencies } from "./armorProficiencies.js";
+import { seedArmorProficiency } from "./armorProficiency.js";
 import { seedCharacters } from "./characters.js";
-import { seedCharClass } from "./classes.js";
-import { seedClassProficiencies } from "./classProficiencies.js";
+import { seedCharClass } from "./class.js";
+import { seedClassProficiency } from "./classProficiency.js";
 import { seedDeities } from "./deities.js";
 import { seedEquipmentList } from "./equipment.js";
-import { seedEquipmentCategories } from "./equipmentCat.js";
+import { seedEquipmentCategory } from "./ArchiveForLater/equipmentCat.js";
 import { seedFactions } from "./factions.js";
 import { seedFeats } from "./feats.js";
 
@@ -20,13 +20,13 @@ async function runSeeds() {
   try {
     await seedAbilityScores();
     await seedArmor();
-    await seedArmorProficiencies();
+    await seedArmorProficiency();
     await seedCharacters();
     await seedCharClass();
-    await seedClassProficiencies();
+    await seedClassProficiency();
     await seedDeities();
     await seedEquipmentList();
-    await seedEquipmentCategories();
+    await seedEquipmentCategory();
     await seedFactions();
     await seedFeats();
     await seed
