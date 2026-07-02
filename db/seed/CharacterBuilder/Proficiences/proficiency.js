@@ -1,170 +1,166 @@
-// import db from '../client.js';
-
-// export async function seedProficiency() {
-//   try {
-//     await db.query('TRUNCATE proficiency RESTART IDENTITY CASCADE');
-
-//     const proficiency = [
-
-//       // ==== ARMOR ====
-//       { index: 'light-armor', name: 'Light Armor', type: 'Armor' },
-//       { index: 'medium-armor', name: 'Medium Armor', type: 'Armor' },
-//       { index: 'heavy-armor', name: 'Heavy Armor', type: 'Armor' },
-//       { index: 'shields', name: 'Shields', type: 'Armor' },
-
-//       // ==== WEAPON ====
-//       { index: 'simple-weapon', name: 'Simple Weapon', type: 'Weapon' },
-//       { index: 'martial-weapon', name: 'Martial Weapon', type: 'Weapon' },
-
-//       // Simple Melee
-//       { index: 'club', name: 'Club', type: 'Weapon' },
-//       { index: 'dagger', name: 'Dagger', type: 'Weapon' },
-//       { index: 'greatclub', name: 'Greatclub', type: 'Weapon' },
-//       { index: 'handaxe', name: 'Handaxe', type: 'Weapon' },
-//       { index: 'javelin', name: 'Javelin', type: 'Weapon' },
-//       { index: 'light-hammer', name: 'Light Hammer', type: 'Weapon' },
-//       { index: 'mace', name: 'Mace', type: 'Weapon' },
-//       { index: 'quarterstaff', name: 'Quarterstaff', type: 'Weapon' },
-//       { index: 'sickle', name: 'Sickle', type: 'Weapon' },
-//       { index: 'spear', name: 'Spear', type: 'Weapon' },
-
-//       // Simple Ranged
-//       { index: 'light-crossbow', name: 'Light Crossbow', type: 'Weapon' },
-//       { index: 'dart', name: 'Dart', type: 'Weapon' },
-//       { index: 'shortbow', name: 'Shortbow', type: 'Weapon' },
-//       { index: 'sling', name: 'Sling', type: 'Weapon' },
-
-//       // Martial Melee
-//       { index: 'battleaxe', name: 'Battleaxe', type: 'Weapon' },
-//       { index: 'flail', name: 'Flail', type: 'Weapon' },
-//       { index: 'glaive', name: 'Glaive', type: 'Weapon' },
-//       { index: 'greataxe', name: 'Greataxe', type: 'Weapon' },
-//       { index: 'greatsword', name: 'Greatsword', type: 'Weapon' },
-//       { index: 'halberd', name: 'Halberd', type: 'Weapon' },
-//       { index: 'lance', name: 'Lance', type: 'Weapon' },
-//       { index: 'longsword', name: 'Longsword', type: 'Weapon' },
-//       { index: 'maul', name: 'Maul', type: 'Weapon' },
-//       { index: 'morningstar', name: 'Morningstar', type: 'Weapon' },
-//       { index: 'pike', name: 'Pike', type: 'Weapon' },
-//       { index: 'rapier', name: 'Rapier', type: 'Weapon' },
-//       { index: 'scimitar', name: 'Scimitar', type: 'Weapon' },
-//       { index: 'shortsword', name: 'Shortsword', type: 'Weapon' },
-//       { index: 'trident', name: 'Trident', type: 'Weapon' },
-//       { index: 'war-pick', name: 'War Pick', type: 'Weapon' },
-//       { index: 'warhammer', name: 'Warhammer', type: 'Weapon' },
-//       { index: 'whip', name: 'Whip', type: 'Weapon' },
-
-//       // Martial Ranged
-//       { index: 'blowgun', name: 'Blowgun', type: 'Weapon' },
-//       { index: 'hand-crossbow', name: 'Hand Crossbow', type: 'Weapon' },
-//       { index: 'heavy-crossbow', name: 'Heavy Crossbow', type: 'Weapon' },
-//       { index: 'longbow', name: 'Longbow', type: 'Weapon' },
-//       { index: 'net', name: 'Net', type: 'Weapon' },
-
-//       // ==== SAVING THROWS ====
-//       { index: 'saving-throw-str', name: 'Saving Throw: Strength', type: 'Saving Throw' },
-//       { index: 'saving-throw-dex', name: 'Saving Throw: Dexterity', type: 'Saving Throw' },
-//       { index: 'saving-throw-con', name: 'Saving Throw: Constitution', type: 'Saving Throw' },
-//       { index: 'saving-throw-int', name: 'Saving Throw: Intelligence', type: 'Saving Throw' },
-//       { index: 'saving-throw-wis', name: 'Saving Throw: Wisdom', type: 'Saving Throw' },
-//       { index: 'saving-throw-cha', name: 'Saving Throw: Charisma', type: 'Saving Throw' },
-
-//       // ==== SKILLS ====
-//       { index: 'skill-acrobatics', name: 'Acrobatics', type: 'Skill' },
-//       { index: 'skill-animal-handling', name: 'Animal Handling', type: 'Skill' },
-//       { index: 'skill-arcana', name: 'Arcana', type: 'Skill' },
-//       { index: 'skill-athletics', name: 'Athletics', type: 'Skill' },
-//       { index: 'skill-deception', name: 'Deception', type: 'Skill' },
-//       { index: 'skill-history', name: 'History', type: 'Skill' },
-//       { index: 'skill-insight', name: 'Insight', type: 'Skill' },
-//       { index: 'skill-intimidation', name: 'Intimidation', type: 'Skill' },
-//       { index: 'skill-investigation', name: 'Investigation', type: 'Skill' },
-//       { index: 'skill-medicine', name: 'Medicine', type: 'Skill' },
-//       { index: 'skill-nature', name: 'Nature', type: 'Skill' },
-//       { index: 'skill-perception', name: 'Perception', type: 'Skill' },
-//       { index: 'skill-performance', name: 'Performance', type: 'Skill' },
-//       { index: 'skill-persuasion', name: 'Persuasion', type: 'Skill' },
-//       { index: 'skill-religion', name: 'Religion', type: 'Skill' },
-//       { index: 'skill-sleight-of-hand', name: 'Sleight of Hand', type: 'Skill' },
-//       { index: 'skill-stealth', name: 'Stealth', type: 'Skill' },
-//       { index: 'skill-survival', name: 'Survival', type: 'Skill' },
-
-//       // ==== TOOLS ====
-//       // Artisan’s Tools
-//       { index: 'alchemist-supplies', name: 'Alchemist\'s Supplies', type: 'Tool' },
-//       { index: 'brewers-supplies', name: 'Brewer\'s Supplies', type: 'Tool' },
-//       { index: 'calligraphers-supplies', name: 'Calligrapher\'s Supplies', type: 'Tool' },
-//       { index: 'carpenters-tools', name: 'Carpenter\'s Tools', type: 'Tool' },
-//       { index: 'cartographers-tools', name: 'Cartographer\'s Tools', type: 'Tool' },
-//       { index: 'cobblers-tools', name: 'Cobbler\'s Tools', type: 'Tool' },
-//       { index: 'cooks-utensils', name: 'Cook\'s Utensils', type: 'Tool' },
-//       { index: 'glassblowers-tools', name: 'Glassblower\'s Tools', type: 'Tool' },
-//       { index: 'jewelers-tools', name: 'Jeweler\'s Tools', type: 'Tool' },
-//       { index: 'leatherworkers-tools', name: 'Leatherworker\'s Tools', type: 'Tool' },
-//       { index: 'masons-tools', name: 'Mason\'s Tools', type: 'Tool' },
-//       { index: 'painters-supplies', name: 'Painter\'s Supplies', type: 'Tool' },
-//       { index: 'potters-tools', name: 'Potter\'s Tools', type: 'Tool' },
-//       { index: 'smiths-tools', name: 'Smith\'s Tools', type: 'Tool' },
-//       { index: 'tinkers-tools', name: 'Tinker\'s Tools', type: 'Tool' },
-//       { index: 'weavers-tools', name: 'Weaver\'s Tools', type: 'Tool' },
-//       { index: 'woodcarvers-tools', name: 'Woodcarver\'s Tools', type: 'Tool' },
-
-//       // Musical Instruments
-//       { index: 'bagpipes', name: 'Bagpipes', type: 'Tool' },
-//       { index: 'drum', name: 'Drum', type: 'Tool' },
-//       { index: 'dulcimer', name: 'Dulcimer', type: 'Tool' },
-//       { index: 'flute', name: 'Flute', type: 'Tool' },
-//       { index: 'lute', name: 'Lute', type: 'Tool' },
-//       { index: 'lyre', name: 'Lyre', type: 'Tool' },
-//       { index: 'horn', name: 'Horn', type: 'Tool' },
-//       { index: 'pan-flute', name: 'Pan Flute', type: 'Tool' },
-//       { index: 'shawm', name: 'Shawm', type: 'Tool' },
-//       { index: 'viol', name: 'Viol', type: 'Tool' },
-
-//       // Gaming Sets
-//       { index: 'dice-set', name: 'Dice Set', type: 'Tool' },
-//       { index: 'dragonchess-set', name: 'Dragonchess Set', type: 'Tool' },
-//       { index: 'playing-card-set', name: 'Playing Card Set', type: 'Tool' },
-//       { index: 'three-dragon-ante-set', name: 'Three-Dragon Ante Set', type: 'Tool' },
-
-//       // Misc Tools
-//       { index: 'disguise-kit', name: 'Disguise Kit', type: 'Tool' },
-//       { index: 'forgery-kit', name: 'Forgery Kit', type: 'Tool' },
-//       { index: 'herbalism-kit', name: 'Herbalism Kit', type: 'Tool' },
-//       { index: 'navigator-tools', name: 'Navigator\'s Tools', type: 'Tool' },
-//       { index: 'poisoners-kit', name: 'Poisoner\'s Kit', type: 'Tool' },
-//       { index: 'thieves-tools', name: 'Thieves\' Tools', type: 'Tool' },
-//       { index: 'vehicles-land', name: 'Vehicles (Land)', type: 'Tool' },
-//       { index: 'vehicles-water', name: 'Vehicles (Water)', type: 'Tool' }
-//     ];
-
-//     for (const prof of proficiency) {
-//         await db.query(
-//             `INSERT INTO proficiency (index, name, type)
-//             VALUES ($1, $2, $3)
-//             ON CONFLICT (index) DO NOTHING`,
-//             [prof.index, prof.name, prof.type]
-//         );
-//     }
-//     console.log('✅ All proficiency seeded successfully.');
-//   } catch (error) {
-//     console.error('❌ Error seeding proficiency:', error);
-//   }
-// }
-
-import { weaponProficiency } from './weaponProficiency.js';
-import { toolProficiency } from '../../toolProficiency.js';
-import { armorProficiency } from './armorProficiency.js';
-import { generalProficiency } from '../../generalProficiency.js';
+import db from '../client.js';
 
 export async function seedProficiency() {
   try {
-    await weaponProficiency();
-    await toolProficiency();
-    await armorProficiency();
-    await generalProficiency();
-    console.log('✅ All proficiency seeded');
-  } catch (err) {
-    console.error('❌ Error seeding proficiency:', err);
+    await db.query('TRUNCATE proficiency RESTART IDENTITY CASCADE');
+
+    const proficiency = [
+
+      // ==== ARMOR ====
+      { name: 'Light Armor', type: 'Armor' },
+      { name: 'Medium Armor', type: 'Armor' },
+      { name: 'Heavy Armor', type: 'Armor' },
+      { name: 'Shields', type: 'Armor' },
+
+      // ==== WEAPON ====
+      { name: 'Simple Weapon', type: 'weapon' },
+      { name: 'Martial Weapon', type: 'weapon' },
+
+      // Simple Melee
+      { name: 'Club', type: 'weapon' },
+      { name: 'Dagger', type: 'weapon' },
+      { name: 'Greatclub', type: 'weapon' },
+      { name: 'Handaxe', type: 'weapon' },
+      { name: 'Javelin', type: 'weapon' },
+      { name: 'Light Hammer', type: 'weapon' },
+      { name: 'Mace', type: 'weapon' },
+      { name: 'Quarterstaff', type: 'weapon' },
+      { name: 'Sickle', type: 'weapon' },
+      { name: 'Spear', type: 'weapon' },
+
+      // Simple Ranged
+      { name: 'Light Crossbow', type: 'weapon' },
+      { name: 'Dart', type: 'weapon' },
+      { name: 'Shortbow', type: 'weapon' },
+      { name: 'Sling', type: 'weapon' },
+
+      // Martial Melee
+      { name: 'Battleaxe', type: 'weapon' },
+      { name: 'Flail', type: 'weapon' },
+      { name: 'Glaive', type: 'weapon' },
+      { name: 'Greataxe', type: 'weapon' },
+      { name: 'Greatsword', type: 'weapon' },
+      { name: 'Halberd', type: 'weapon' },
+      { name: 'Lance', type: 'weapon' },
+      { name: 'Longsword', type: 'weapon' },
+      { name: 'Maul', type: 'weapon' },
+      { name: 'Morningstar', type: 'weapon' },
+      { name: 'Pike', type: 'weapon' },
+      { name: 'Rapier', type: 'weapon' },
+      { name: 'Scimitar', type: 'weapon' },
+      { name: 'Shortsword', type: 'weapon' },
+      { name: 'Trident', type: 'weapon' },
+      { name: 'War Pick', type: 'weapon' },
+      { name: 'Warhammer', type: 'weapon' },
+      { name: 'Whip', type: 'weapon' },
+
+      // Martial Ranged
+      { name: 'Blowgun', type: 'weapon' },
+      { name: 'Hand Crossbow', type: 'weapon' },
+      { name: 'Heavy Crossbow', type: 'weapon' },
+      { name: 'Longbow', type: 'weapon' },
+      { name: 'Net', type: 'weapon' },
+
+      // ==== SAVING THROW ====
+      { name: 'Saving Throw: Strength', type: 'saving throw' },
+      { name: 'Saving Throw: Dexterity', type: 'saving throw' },
+      { name: 'Saving Throw: Constitution', type: 'saving throw' },
+      { name: 'Saving Throw: Intelligence', type: 'saving throw' },
+      { name: 'Saving Throw: Wisdom', type: 'saving throw' },
+      { name: 'Saving Throw: Charisma', type: 'saving throw' },
+
+      // ==== SKILL ====
+      { name: 'Acrobatics', type: 'skill' },
+      { name: 'Animal Handling', type: 'skill' },
+      { name: 'Arcana', type: 'skill' },
+      { name: 'Athletics', type: 'skill' },
+      { name: 'Deception', type: 'skill' },
+      { name: 'History', type: 'skill' },
+      { name: 'Insight', type: 'skill' },
+      { name: 'Intimidation', type: 'skill' },
+      { name: 'Investigation', type: 'skill' },
+      { name: 'Medicine', type: 'skill' },
+      { name: 'Nature', type: 'skill' },
+      { name: 'Perception', type: 'skill' },
+      { name: 'Performance', type: 'skill' },
+      { name: 'Persuasion', type: 'skill' },
+      { name: 'Religion', type: 'skill' },
+      { name: 'Sleight of Hand', type: 'skill' },
+      { name: 'Stealth', type: 'skill' },
+      { name: 'Survival', type: 'skill' },
+
+      // ==== TOOLS ====
+      // Artisan’s Tools
+      { name: 'Alchemist\'s Supplies', type: 'tool' },
+      { name: 'Brewer\'s Supplies', type: 'tool' },
+      { name: 'Calligrapher\'s Supplies', type: 'tool' },
+      { name: 'Carpenter\'s Tools', type: 'tool' },
+      { name: 'Cartographer\'s Tools', type: 'tool' },
+      { name: 'Cobbler\'s Tools', type: 'tool' },
+      { name: 'Cook\'s Utensils', type: 'tool' },
+      { name: 'Glassblower\'s Tools', type: 'tool' },
+      { name: 'Jeweler\'s Tools', type: 'tool' },
+      { name: 'Leatherworker\'s Tools', type: 'tool' },
+      { name: 'Mason\'s Tools', type: 'tool' },
+      { name: 'Painter\'s Supplies', type: 'tool' },
+      { name: 'Potter\'s Tools', type: 'tool' },
+      { name: 'Smith\'s Tools', type: 'tool' },
+      { name: 'Tinker\'s Tools', type: 'tool' },
+      { name: 'Weaver\'s Tools', type: 'tool' },
+      { name: 'Woodcarver\'s Tools', type: 'tool' },
+
+      // Musical Instrument
+      { name: 'Bagpipes', type: 'tool' },
+      { name: 'Drum', type: 'tool' },
+      { name: 'Dulcimer', type: 'tool' },
+      { name: 'Flute', type: 'tool' },
+      { name: 'Lute', type: 'tool' },
+      { name: 'Lyre', type: 'tool' },
+      { name: 'Horn', type: 'tool' },
+      { name: 'Pan Flute', type: 'tool' },
+      { name: 'Shawm', type: 'tool' },
+      { name: 'Viol', type: 'tool' },
+
+      // Misc Tool
+      { name: 'Disguise Kit', type: 'tool' },
+      { name: 'Forgery Kit', type: 'tool' },
+      { name: 'Herbalism Kit', type: 'tool' },
+      { name: 'Navigator\'s Tools', type: 'tool' },
+      { name: 'Poisoner\'s Kit', type: 'tool' },
+      { name: 'Thieves\' Tools', type: 'tool' },
+      { name: 'Vehicles (Land)', type: 'tool' },
+      { name: 'Vehicles (Water)', type: 'tool' },
+
+      // ==== LANGUAGES ====
+      { name: 'Common', type: 'language' },
+      { name: 'Common Sign Language', type: 'language' },
+      { name: 'Draconic', type: 'language' },
+      { name: 'Dwarvish', type: 'language' },
+      { name: 'Elvish', type: 'language' },
+      { name: 'Giant', type: 'language' },
+      { name: 'Gnomish', type: 'language' },
+      { name: 'Goblin', type: 'language' },
+      { name: 'Halfling', type: 'language' },
+      { name: 'Orc', type: 'language' },
+      { name: 'Abyssal', type: 'language' },
+      { name: 'Celestial', type: 'language' },
+      { name: 'Deep Speech', type: 'language' },
+      { name: 'Infernal', type: 'language' },
+      { name: 'Primordial', type: 'language' },
+      { name: 'Sylvan', type: 'language' },
+      { name: 'Undercommon', type: 'language' },
+    ];
+
+    for (const prof of proficiency) {
+        await db.query(
+            `INSERT INTO proficiency (index, name, type)
+            VALUES ($1, $2, $3)
+            ON CONFLICT (index) DO NOTHING`,
+            [prof.index, prof.name, prof.type]
+        );
+    }
+    console.log('✅ All proficiency seeded successfully.');
+  } catch (error) {
+    console.error('❌ Error seeding proficiency:', error);
   }
 }
